@@ -1,2 +1,2 @@
-<?php defined('InShopNC') or exit('Access Invalid!');?>
-publish_album
+<?php defined('InShopNC') or exit('Access Invalid!');?>
+publish_album

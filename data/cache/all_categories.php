@@ -1995,7 +1995,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-256.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-256.jpg',
     'class3' => 
     array (
       264 => 
@@ -2832,7 +2832,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-2.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-2.jpg',
     'class3' => 
     array (
       156 => 
@@ -3793,7 +3793,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-3.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-3.jpg',
     'class3' => 
     array (
       206 => 
@@ -6142,7 +6142,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-1.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-1.jpg',
     'class3' => 
     array (
       12 => 
@@ -7474,7 +7474,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-308.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-308.jpg',
     'class3' => 
     array (
       314 => 
@@ -8484,7 +8484,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-470.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-470.jpg',
     'class3' => 
     array (
       478 => 
@@ -9641,7 +9641,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-593.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-593.jpg',
     'class3' => 
     array (
       604 => 
@@ -10452,7 +10452,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-888.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-888.jpg',
     'class3' => 
     array (
       895 => 
@@ -11504,7 +11504,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-530.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-530.jpg',
     'class3' => 
     array (
       541 => 
@@ -12638,7 +12638,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-662.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-662.jpg',
     'class3' => 
     array (
       671 => 
@@ -14222,7 +14222,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-730.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-730.jpg',
     'class3' => 
     array (
       738 => 
@@ -15297,7 +15297,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-825.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-825.jpg',
     'class3' => 
     array (
       838 => 
@@ -16536,7 +16536,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-959.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-959.jpg',
     'class3' => 
     array (
       968 => 
@@ -16825,7 +16825,7 @@
         'brands' => NULL,
       ),
     ),
-    'pic' => 'http://47.111.27.189/web/data/upload/shop/common/category-pic-1037.jpg',
+    'pic' => 'http://haoid.ys.haoid.cn/data/upload/shop/common/category-pic-1037.jpg',
     'class3' => 
     array (
       1044 => 

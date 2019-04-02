@@ -23,10 +23,10 @@
 	
     $.fn.vectorMap = function(options) {
         var defaultParams = {
-			map: 'world_en',
+			map: 'world_en',
 			backgroundColor: '#FFFFFF',//背景色
-            color: '#ffffff',
-            hoverColor: '#f63a3a',//鼠标放上去颜色
+            color: '#ffffff',
+            hoverColor: '#f63a3a',//鼠标放上去颜色
             scaleColors: ['#b6d6ff', '#005ace'],
 			normalizeFunction: 'linear'
 		}, map;
@@ -305,7 +305,7 @@
 		
 		this.index = WorldMap.mapIndex;
 		this.label = $('<div/>').addClass('jvectormap-label').appendTo($('body'));
-		//this.labelText = $('<div/>').addClass('jvectormap-label').appendTo($('body'));
+		//this.labelText = $('<div/>').addClass('jvectormap-label').appendTo($('body'));
 		//$('<div/>').addClass('jvectormap-zoomin').text('+').appendTo(params.container);
 		//$('<div/>').addClass('jvectormap-zoomout').html('&#x2212;').appendTo(params.container);
 	

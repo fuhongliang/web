@@ -1,3 +1,3 @@
-<?php
-defined('InShopNC') or exit('Access Invalid!');
-return $config;
+<?php
+defined('InShopNC') or exit('Access Invalid!');
+return $config;

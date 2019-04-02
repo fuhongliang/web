@@ -1,2 +1,2 @@
-<?php
-defined('InShopNC') or exit('Access Invalid!');
+<?php
+defined('InShopNC') or exit('Access Invalid!');
