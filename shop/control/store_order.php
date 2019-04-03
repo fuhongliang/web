@@ -48,7 +48,6 @@ class store_orderControl extends BaseSellerControl {
         }
 
         $order_list = $model_order->getOrderList($condition, 20, '*', 'order_id desc','', array('order_goods','order_common','member'));
-        var_dump($order_list);
         //页面中显示那些操作
         foreach ($order_list as $key => $order_info) {
 
