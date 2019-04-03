@@ -117,6 +117,8 @@ define('ORDER_STATE_CANCEL', 0);
 define('ORDER_STATE_NEW', 10);
 //已支付
 define('ORDER_STATE_PAY', 20);
+//代发货
+define('ORDER_STATE_NEEDPAY', 25);
 //已发货
 define('ORDER_STATE_SEND', 30);
 //已收货，交易成功

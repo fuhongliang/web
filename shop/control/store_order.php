@@ -28,10 +28,10 @@ class store_orderControl extends BaseSellerControl {
         if ($_GET['buyer_name'] != '') {
             $condition['buyer_name'] = $_GET['buyer_name'];
         }
-        $allow_state_array = array('state_new','state_pay','state_send','state_success','state_cancel');
+        $allow_state_array = array('state_new','state_pay','state_needpay','state_send','state_success','state_cancel');
         if (in_array($_GET['state_type'],$allow_state_array)) {
             $condition['order_state'] = str_replace($allow_state_array,
-                    array(ORDER_STATE_NEW,ORDER_STATE_PAY,ORDER_STATE_SEND,ORDER_STATE_SUCCESS,ORDER_STATE_CANCEL), $_GET['state_type']);
+                    array(ORDER_STATE_NEW,ORDER_STATE_PAY,ORDER_STATE_NEEDPAY,ORDER_STATE_SEND,ORDER_STATE_SUCCESS,ORDER_STATE_CANCEL), $_GET['state_type']);
         } else {
             $_GET['state_type'] = 'store_order';
         }
