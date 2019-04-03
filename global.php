@@ -110,6 +110,7 @@ define('GOODS_IMAGES_EXT', '_60,_240,_360,_1280');
 /**
  *  订单状态
  */
+
 //已取消
 define('ORDER_STATE_CANCEL', 0);
 //已产生但未支付
