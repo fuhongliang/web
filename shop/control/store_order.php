@@ -46,7 +46,6 @@ class store_orderControl extends BaseSellerControl {
         if ($_GET['skip_off'] == 1) {
             $condition['order_state'] = array('neq',ORDER_STATE_CANCEL);
         }
-var_dump($condition);die;
         $order_list = $model_order->getOrderList($condition, 20, '*', 'order_id desc','', array('order_goods','order_common','member'));
 
         //页面中显示那些操作
