@@ -497,7 +497,7 @@ class orderModel extends Model {
 
         	//发货
         	case 'send':
-        	    $state = !$order_info['lock_state'] && $order_info['order_state'] == ORDER_STATE_PAY;
+        	    $state = !$order_info['lock_state'] && $order_info['order_state'] == ORDER_STATE_NEEDPAY;
         	    break;
 
         	//收货

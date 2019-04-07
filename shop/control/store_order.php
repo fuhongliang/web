@@ -49,6 +49,7 @@ class store_orderControl extends BaseSellerControl {
 
         $order_list = $model_order->getOrderList($condition, 20, '*', 'order_id desc','', array('order_goods','order_common','member'));
         //页面中显示那些操作
+
         foreach ($order_list as $key => $order_info) {
 
         	//显示取消订单
@@ -68,7 +69,6 @@ class store_orderControl extends BaseSellerControl {
 
         	//显示物流跟踪
         	$order_info['if_deliver'] = $model_order->getOrderOperateState('deliver',$order_info);
-
         	foreach ($order_info['extend_order_goods'] as $value) {
         	    $value['image_60_url'] = cthumb($value['goods_image'], 60, $value['store_id']);
         	    $value['image_240_url'] = cthumb($value['goods_image'], 240, $value['store_id']);
