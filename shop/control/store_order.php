@@ -51,6 +51,7 @@ class store_orderControl extends BaseSellerControl {
         //页面中显示那些操作
 
         foreach ($order_list as $key => $order_info) {
+            $order_info['if_store_receive'] = $model_order->getOrderOperateState('store_receive',$order_info);
 
         	//显示取消订单
         	$order_info['if_cancel'] = $model_order->getOrderOperateState('store_cancel',$order_info);

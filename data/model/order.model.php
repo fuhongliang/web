@@ -442,7 +442,9 @@ class orderModel extends Model {
         if (!is_array($order_info) || empty($order_info)) return false;
 
         switch ($operate) {
-
+            case 'store_receive':
+                $state = $order_info['order_state'] == ORDER_STATE_PAY;
+                break;
             //买家取消订单
         	case 'buyer_cancel':
         	   $state = ($order_info['order_state'] == ORDER_STATE_NEW) ||

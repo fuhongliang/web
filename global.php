@@ -115,7 +115,7 @@ define('GOODS_IMAGES_EXT', '_60,_240,_360,_1280');
 define('ORDER_STATE_CANCEL', 0);
 //已产生但未支付
 define('ORDER_STATE_NEW', 10);
-//已支付
+//已支付  待接单
 define('ORDER_STATE_PAY', 20);
 //代发货
 define('ORDER_STATE_NEEDPAY', 25);
