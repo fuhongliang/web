@@ -703,6 +703,7 @@ class storeControl extends SystemControl{
 			$shop_array['province_id']	= $joinin_detail['company_province_id'];
 			$shop_array['area_info']	= $joinin_detail['company_address'];
 			$shop_array['store_address']= $joinin_detail['company_address_detail'];
+            $shop_array['store_phone']= $joinin_detail['contacts_phone'];
 			$shop_array['store_zip']	= '';
 			$shop_array['store_zy']		= '';
 			$shop_array['store_state']	= 1;
