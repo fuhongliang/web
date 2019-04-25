@@ -52,6 +52,7 @@ class monthControl extends BaseCronControl {
         $model_order = Model('order');
         $model_bill = Model('bill');
         $order_statis_max_info = $model_bill->getOrderStatisInfo(array(),'os_end_date','os_month desc');
+
         //计算起始时间点，自动生成以月份为单位的空结算记录
         if (!$order_statis_max_info){
             $order_min_info = $model_order->getOrderInfo(array(),array(),'min(add_time) as add_time');
