@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crontab/control/month.php" beforeDir="false" afterPath="$PROJECT_DIR$/crontab/control/month.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/all_categories.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/area.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/class_tag.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/consult_type.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/express.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/gc_class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/goods_class_seo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/groupbuy_classes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/groupbuy_price.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/groupbuy_vr_cities.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/groupbuy_vr_classes.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/member_msg_tpl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/nav.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/own_shop_ids.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/seo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/setting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/store_class.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/store_grade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cache/store_msg_tpl.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config/config.ini.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/config.ini.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/css/install.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/data/config.ini.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/data/utf8.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/data/utf8_add.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/data/utf8_circle.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/data/utf8_cms.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/data/utf8_microshop.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/images/install_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/include/function.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/include/var.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/step_0.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/step_1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/step_2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/step_3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/step_4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install/step_5.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +11,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -81,10 +52,12 @@
       <find>47.111.27.189</find>
       <find>success at</find>
       <find>shutdown</find>
+      <find>47.92.244.60</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>47.92.244.60</replace>
+      <replace>47.111.27.189</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,7 +95,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,10 +102,22 @@
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,16 +162,18 @@
       <workItem from="1556079508953" duration="640000" />
       <workItem from="1556086204884" duration="24000" />
       <workItem from="1556157420166" duration="705000" />
+      <workItem from="1556164057049" duration="85000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25190000" />
+    <option name="totallyTimeSpent" value="25275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19989339" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20202559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -319,13 +305,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/install/data/utf8.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1057">
-          <caret line="2382" column="2" selection-start-line="2382" selection-start-column="2" selection-end-line="2382" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/install/data/utf8.sql" />
     <entry file="file://$PROJECT_DIR$/shop/templates/default/home/goods.squares.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -420,13 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -448,6 +421,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="118" column="23" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
