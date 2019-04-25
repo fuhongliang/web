@@ -64,8 +64,8 @@ class monthControl extends BaseCronControl {
         }
         $data = array();
         $i = 1;
-
         $current_time = strtotime(date('Y-m-01 00:00:01',TIMESTAMP));
+        //echo date('Y-m-d H:i:s',$start_unixtime).'----'.date('Y-m-d H:i:s',$current_time);die;
         while (($time = strtotime('-'.$i.' month',$current_time)) >= $start_unixtime) {
             if (date('Ym',$start_unixtime) == date('Ym',$time)) {
                 //如果两个月份相等检查库是里否存在
@@ -82,10 +82,8 @@ class monthControl extends BaseCronControl {
             $data[$key]['os_year'] = date('Y',$first_day_unixtime);
             $data[$key]['os_start_date'] = $first_day_unixtime;
             $data[$key]['os_end_date'] = $last_day_unixtime;
-
             //生成所有店铺月订单出账单
             $this->_create_real_order_bill($data[$key]);
-
             $fileds = 'sum(ob_order_totals) as ob_order_totals,sum(ob_shipping_totals) as ob_shipping_totals,
                     sum(ob_order_return_totals) as ob_order_return_totals,
                     sum(ob_commis_totals) as ob_commis_totals,sum(ob_commis_return_totals) as ob_commis_return_totals,
@@ -103,6 +101,7 @@ class monthControl extends BaseCronControl {
         krsort($data);
         foreach ($data as $v) {
             $insert = $model_bill->addOrderStatis($v);
+
             if (!$insert) {
                 throw new Exception('生成平台月出账单['.$v['os_month'].']失败');
             }
@@ -157,15 +156,15 @@ class monthControl extends BaseCronControl {
                         }
 
                         // 发送店铺消息
-                        $param = array();
-                        $param['code'] = 'store_bill_affirm';
-                        $param['store_id'] = $store_info['store_id'];
-                        $param['param'] = array(
-                            'state_time' => date('Y-m-d H:i:s', $data_bill['ob_start_date']),
-                            'end_time' => date('Y-m-d H:i:s', $data_bill['ob_end_date']),
-                            'bill_no' => $data_bill['ob_no']
-                        );
-                        QueueClient::push('sendStoreMsg', $param);
+//                        $param = array();
+//                        $param['code'] = 'store_bill_affirm';
+//                        $param['store_id'] = $store_info['store_id'];
+//                        $param['param'] = array(
+//                            'state_time' => date('Y-m-d H:i:s', $data_bill['ob_start_date']),
+//                            'end_time' => date('Y-m-d H:i:s', $data_bill['ob_end_date']),
+//                            'bill_no' => $data_bill['ob_no']
+//                        );
+//                        QueueClient::push('sendStoreMsg', $param);
                     }
                 }
             }
