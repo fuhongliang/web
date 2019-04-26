@@ -34,11 +34,9 @@ $('.send_success_tips').hide();
 var ALLOW_SEND = true;
 $(function(){
 	$('.submit').on('click',function(){
-		if (!$('#auth_form').valid()){
-			document.getElementById('codeimage').src='<?php echo SHOP_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash();?>&t=' + Math.random();
-		} else {
+
 			$('#auth_form').submit();
-		}
+		
 	});
 	function StepTimes() {
 		$num = parseInt($('#show_times').html());
