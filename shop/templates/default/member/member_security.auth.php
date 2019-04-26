@@ -18,36 +18,6 @@
       <input type="hidden" name="form_submit" value="ok" />
       <input type="hidden" name="type" value="<?php echo $_GET['type'];?>">
       <input name="nchash" type="hidden" value="<?php echo getNchash();?>" />
-<!--      <dl>-->
-<!--        <dt><i class="required">*</i>选择身份认证方式：</dt>-->
-<!--        <dd><p>-->
-<!--          <select name="auth_type" id="auth_type">-->
-<!--            --><?php //if ($output['member_info']['member_mobile']) {?>
-<!--            <option value="mobile">手机 [--><?php //echo encryptShow($output['member_info']['member_mobile'],4,4);?><!--]</option>-->
-<!--            --><?php //} ?>
-<!--            --><?php //if ($output['member_info']['member_email']) {?>
-<!--            <option value="email">邮箱 [--><?php //echo encryptShow($output['member_info']['member_email'],4,4);?><!--]</option>-->
-<!--            --><?php //} ?>
-<!--          </select>-->
-<!--          <a href="javascript:void(0);" id="send_auth_code" class="ncm-btn ml5"><span id="sending" style="display:none">正在</span><span class="send_success_tips"><strong id="show_times" class="red mr5"></strong>秒后再次</span>获取安全验证码</a></p>-->
-<!--          <p class="send_success_tips hint mt10">“安全验证码”已发出，请注意查收，请在<strong>“30分种”</strong>内完成验证。</p>-->
-<!--        </dd>-->
-<!--      </dl>-->
-<!--      <dl>-->
-<!--        <dt><i class="required">*</i>请输入安全验证码：</dt>-->
-<!--        <dd>-->
-<!--          <input type="text" class="text"  maxlength="6" value="" name="auth_code" size="10" id="auth_code" autocomplete="off" />-->
-<!--          <label for="email" generated="true" class="error"></label>-->
-<!--        </dd>-->
-<!--      </dl>-->
-      <dl>
-        <dt><i class="required">*</i>图形验证码：</dt>
-        <dd>
-          <input type="text" name="captcha" class="text" id="captcha" maxlength="4" size="10" autocomplete="off" />
-         <img src="<?php echo SHOP_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash();?>" name="codeimage" border="0" id="codeimage" class="ml5 vm"><a href="javascript:void(0)" class="ml5 blue" onclick="javascript:document.getElementById('codeimage').src='<?php echo SHOP_SITE_URL?>/index.php?act=seccode&op=makecode&nchash=<?php echo getNchash();?>&t=' + Math.random();">看不清？换张图</a>
-          <label for="captcha" generated="true" class="error"></label>
-        </dd>
-      </dl>
       <dl class="bottom">
         <dt>&nbsp;</dt>
         <dd>
@@ -98,42 +68,6 @@ $(function(){
 			}
 		});
 	});
-
-    //$('#auth_form').validate({
-    //    rules : {
-    //    	auth_code : {
-    //            required : true,
-    //            maxlength : 6,
-    //            minlength : 6,
-    //            digits : true
-    //        },
-    //        captcha : {
-    //            required : true,
-    //            minlength: 4,
-    //            remote   : {
-    //                url : '<?php //echo SHOP_SITE_URL?>///index.php?act=seccode&op=check&nchash=<?php //echo getNchash();?>//',
-    //                type: 'get',
-    //                data:{
-    //                    captcha : function(){
-    //                        return $('#captcha').val();
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    },
-    //    messages : {
-    //    	auth_code : {
-    //            required : '<i class="icon-exclamation-sign"></i>请正确输入验证码',
-    //            maxlength : '<i class="icon-exclamation-sign"></i>请正确输入验证码',
-	//			minlength : '<i class="icon-exclamation-sign"></i>请正确输入验证码',
-	//			digits : '<i class="icon-exclamation-sign"></i>请正确输入验证码'
-    //        },
-    //        captcha : {
-    //            required : '<i class="icon-exclamation-sign"></i>请正确输入图形验证码',
-    //            minlength: '<i class="icon-exclamation-sign"></i>请正确输入图形验证码',
-	//			remote	 : '<i class="icon-exclamation-sign"></i>请正确输入图形验证码'
-    //        }
-    //    }
-    //});
+    
 });
 </script> 
