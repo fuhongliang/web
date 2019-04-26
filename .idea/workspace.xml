@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/shop/templates/default/member/member_security.auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/default/member/member_security.auth.php" afterDir="false" />
-    </list>
+    <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shop/templates/default/member/member_security.auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="103" column="25" lean-forward="true" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+            <state relative-caret-position="-575">
+              <caret line="66" column="34" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#a#0;n#p#0;n#dd#0;n#dl#0;n#form#0;n#div#2;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shop/control/member_security.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="99" column="33" lean-forward="true" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+            <state relative-caret-position="349">
+              <caret line="98" selection-start-line="98" selection-start-column="2" selection-end-line="100" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -104,6 +102,7 @@
         <option value="$PROJECT_DIR$/crontab/control/month.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/shop/templates/default/member/member_security.auth.php" />
+        <option value="$PROJECT_DIR$/shop/control/member_security.php" />
       </list>
     </option>
   </component>
@@ -197,12 +196,12 @@
       <workItem from="1556175101443" duration="5781000" />
       <workItem from="1556181124826" duration="1018000" />
       <workItem from="1556184780432" duration="728000" />
-      <workItem from="1556244632805" duration="2508000" />
+      <workItem from="1556244632805" duration="2573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37311000" />
+    <option name="totallyTimeSpent" value="37376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -541,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/templates/default/member/member_security.auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="103" column="25" lean-forward="true" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        <state relative-caret-position="-575">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#span#0;n#a#0;n#p#0;n#dd#0;n#dl#0;n#form#0;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -551,8 +550,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shop/control/member_security.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="99" column="33" lean-forward="true" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
+        <state relative-caret-position="349">
+          <caret line="98" selection-start-line="98" selection-start-column="2" selection-end-line="100" selection-end-column="15" />
         </state>
       </provider>
     </entry>
