@@ -7,6 +7,7 @@
  **by 好商城V3 www.haoid.cn 运营版*/
 
 defined('InShopNC') or exit('Access Invalid!');
+
 class SystemControl{
 
 	/**

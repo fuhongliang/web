@@ -1,5 +1,5 @@
 <?php
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'AndroidNotification.php');
+require_once(dirname(__FILE__) . '/../AndroidNotification.php');
 
 class AndroidUnicast extends AndroidNotification {
 	function __construct() {

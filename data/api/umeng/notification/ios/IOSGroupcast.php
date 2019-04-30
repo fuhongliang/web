@@ -1,5 +1,5 @@
 <?php
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'IOSNotification.php');
+require_once(dirname(__FILE__) . '/../IOSNotification.php');
 
 class IOSGroupcast extends IOSNotification {
 	function  __construct() {

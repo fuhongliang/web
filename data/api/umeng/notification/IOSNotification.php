@@ -1,5 +1,5 @@
 <?php
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'UmengNotification.php');
+require_once('UmengNotification.php');
 
 abstract class IOSNotification extends UmengNotification {
 	// The array for payload, please see API doc for more information

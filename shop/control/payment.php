@@ -320,6 +320,11 @@ class paymentControl extends BaseHomeControl{
 		    }
 		}
 
+//        $data=Model("store")->getdevicetokens($order_info['store_id']);
+//        require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'Umeng.php');
+//        $um=new Umeng();
+//        $um->sendAndroidUnicast($data['device_tokens'],"新订单提示","你新的外卖订单，请注意查收");
+
 		//支付成功后跳转
 		if ($order_type == 'real_order') {
 		    $pay_ok_url = SHOP_SITE_URL.'/index.php?act=buy&op=pay_ok&pay_sn='.$out_trade_no.'&pay_amount='.ncPriceFormat($api_pay_amount);

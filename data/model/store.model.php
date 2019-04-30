@@ -32,6 +32,17 @@ class storeModel extends Model {
         dkcache('own_shop_ids');
     }
 
+    /**获取token
+     * @param $store_id
+     * @return mixed
+     */
+    public function getdevicetokens($store_id)
+    {
+        $data = $this->table('umeng')->field('device_tokens,app_type')->where(array(
+            'store_id' => $store_id,
+        ))->find();
+        return $data;
+    }
     /**
      * 获取自营店铺的ID
      *

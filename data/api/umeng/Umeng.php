@@ -1,56 +1,79 @@
 <?php
+require_once(dirname(__FILE__) . '/' . 'notification/android/AndroidBroadcast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/android/AndroidFilecast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/android/AndroidGroupcast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/android/AndroidUnicast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/android/AndroidCustomizedcast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/ios/IOSBroadcast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/ios/IOSFilecast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/ios/IOSGroupcast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/ios/IOSUnicast.php');
+require_once(dirname(__FILE__) . '/' . 'notification/ios/IOSCustomizedcast.php');
+
+class Umeng
+{
+    protected $appkey = NULL;
+    protected $appMasterSecret = NULL;
+    protected $timestamp = NULL;
+    protected $validation_token = NULL;
 
 
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'android'.DS.'AndroidBroadcast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'android'.DS.'AndroidFilecast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'android'.DS.'AndroidGroupcast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'android'.DS.'AndroidUnicast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'android'.DS.'AndroidFilecast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'android'.DS.'AndroidCustomizedcast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'ios'.DS.'IOSBroadcast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'ios'.DS.'IOSFilecast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'ios'.DS.'IOSGroupcast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'ios'.DS.'IOSUnicast.php');
-require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'ios'.DS.'IOSCustomizedcast.php');
+    function __construct($appkey,$secret)
+    {
+        $this->appkey          = $appkey;
+        $this->appMasterSecret = $secret;
+        $this->timestamp       = strval(time());
+    }
 
 
-class Umeng {
-	protected $appkey           = NULL;
-	protected $appMasterSecret     = NULL;
-	protected $timestamp        = NULL;
-	protected $validation_token = NULL;
+    function sendAndroidUnicast($device_tokens, $title, $text)
+    {
+        try {
+            $unicast = new AndroidUnicast();
+            $unicast->setAppMasterSecret($this->appMasterSecret);
+            $unicast->setPredefinedKeyValue("appkey", $this->appkey);
+            $unicast->setPredefinedKeyValue("timestamp", $this->timestamp);
+            // Set your device tokens here
+            $unicast->setPredefinedKeyValue("device_tokens", $device_tokens);
+            $unicast->setPredefinedKeyValue("ticker", "Android unicast ticker");
+            $unicast->setPredefinedKeyValue("title", $title);
+            $unicast->setPredefinedKeyValue("text", $text);
+            $unicast->setPredefinedKeyValue("after_open", "go_app");
+            // Set 'production_mode' to 'false' if it's a test device.
+            // For how to register a test device, please see the developer doc.
+            $unicast->setPredefinedKeyValue("production_mode", "false");
+            // Set extra fields
+            $unicast->setExtraField("test", "helloworld");
+            $unicast->send();
+        } catch (Exception $e) {
+            print("Caught exception: " . $e->getMessage());
+        }
+    }
 
-	function __construct() {
-		$this->appkey = "5cc026e64ca357afec000039";
-		$this->appMasterSecret = "ci54rxbqofvnru9mkflfwgz7xm0mrqb0";
-		$this->timestamp = strval(time());
-	}
+    function sendIOSUnicast($device_tokens, $title)
+    {
+        try {
+            $unicast = new IOSUnicast();
+            $unicast->setAppMasterSecret($this->appMasterSecret);
+            $unicast->setPredefinedKeyValue("appkey", $this->appkey);
+            $unicast->setPredefinedKeyValue("timestamp", $this->timestamp);
+            // Set your device tokens here
+            $unicast->setPredefinedKeyValue("device_tokens", $device_tokens);
+            $unicast->setPredefinedKeyValue("alert", $title);
+            $unicast->setPredefinedKeyValue("badge", 0);
+            $unicast->setPredefinedKeyValue("sound", "chime");
+            // Set 'production_mode' to 'true' if your app is under production mode
+            $unicast->setPredefinedKeyValue("production_mode", "false");
+            // Set customized fields
+            //           $unicast->setCustomizedField("test", "helloworld");
+//            $unicast->setCustomizedField("display_type", "message");
+//            $unicast->setCustomizedField("body", json_encode(['custom'=>""]));
+//            $unicast->setCustomizedField("custom", "");
 
-	function sendAndroidUnicast() {
-		try {
-			$unicast = new AndroidUnicast();
-			$unicast->setAppMasterSecret($this->appMasterSecret);
-			$unicast->setPredefinedKeyValue("appkey",           $this->$appkey);
-			$unicast->setPredefinedKeyValue("timestamp",        $this->timestamp);
-			// Set your device tokens here
-			$unicast->setPredefinedKeyValue("device_tokens",    "xx"); 
-			$unicast->setPredefinedKeyValue("ticker",           "Android unicast ticker");
-			$unicast->setPredefinedKeyValue("title",            "Android unicast title");
-			$unicast->setPredefinedKeyValue("text",             "Android unicast text");
-			$unicast->setPredefinedKeyValue("after_open",       "go_app");
-			// Set 'production_mode' to 'false' if it's a test device. 
-			// For how to register a test device, please see the developer doc.
-			$unicast->setPredefinedKeyValue("production_mode", "true");
-			// Set extra fields
-			$unicast->setExtraField("test", "helloworld");
-			print("Sending unicast notification, please wait...\r\n");
-			$unicast->send();
-			print("Sent SUCCESS\r\n");
-		} catch (Exception $e) {
-			print("Caught exception: " . $e->getMessage());
-		}
-	}
+            $unicast->send();
 
-
+        } catch (Exception $e) {
+            print("Caught exception: " . $e->getMessage());
+        }
+    }
 }
-

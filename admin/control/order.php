@@ -112,6 +112,7 @@ class orderControl extends SystemControl{
 	 * @throws Exception
 	 */
 	private function _order_receive_pay($order_info, $post) {
+
 	    $order_id = $order_info['order_id'];
 	    $model_order = Model('order');
 	    $logic_order = Logic('order');
@@ -136,9 +137,20 @@ class orderControl extends SystemControl{
 	    }
 	    $order_list	= $model_order->getOrderList(array('pay_sn'=>$order_info['pay_sn'],'order_state'=>ORDER_STATE_NEW));
 	    $result = $logic_order->changeOrderReceivePay($order_list,'system',$this->admin_info['name'],$post);
-        require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'Umeng.php');
-        $um=new Umeng();
-        var_dump($um);
+
+	    $data=Model("store")->getdevicetokens($order_info['store_id']);
+
+        require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'Umeng.php');
+
+        if($data['app_type'] == 1)
+        {
+            $android=new Umeng("5cc026e64ca357afec000039","ci54rxbqofvnru9mkflfwgz7xm0mrqb0");
+            $android->sendAndroidUnicast($data['device_tokens'],"新订单提示","你有新的订单，请注意查收");
+        }elseif ($data['app_type'] == 2)
+        {
+            $ios=new Umeng("5cc7bee60cafb2129200044d","l2rod9mlfopywtnjzkucp6sdh8bcbxkv");
+            $ios->sendIOSUnicast($data['device_tokens'],"你有新的订单，请注意查收");
+        }
 
         if ($result['state']) {
             $this->log('将订单改为已收款状态,'.L('order_number').':'.$order_info['order_sn'],1);
