@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/control/control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/control/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/Umeng.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/AndroidNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/AndroidNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/IOSNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/IOSNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/UmengNotification.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/UmengNotification.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidBroadcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidBroadcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidCustomizedcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidCustomizedcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidFilecast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidFilecast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidGroupcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidGroupcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidListcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidListcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidUnicast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/android/AndroidUnicast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSBroadcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSBroadcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSCustomizedcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSCustomizedcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSFilecast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSFilecast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSGroupcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSGroupcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSListcast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSListcast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSUnicast.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSUnicast.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/config/config.ini.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/config.ini.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/model/store.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/model/store.model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/control/payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/control/payment.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,28 +13,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/control/order.php">
+        <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="147" column="88" selection-start-line="147" selection-start-column="88" selection-end-line="147" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/model/store.model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="38" column="46" lean-forward="true" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/api/umeng/Umeng.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="81" />
+            <state relative-caret-position="484">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -139,7 +99,6 @@
         <option value="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSGroupcast.php" />
         <option value="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSListcast.php" />
         <option value="$PROJECT_DIR$/data/api/umeng/notification/ios/IOSUnicast.php" />
-        <option value="$PROJECT_DIR$/data/config/config.ini.php" />
         <option value="$PROJECT_DIR$/data/model/umeng.model.php" />
         <option value="$PROJECT_DIR$/admin/control/umeng.php" />
         <option value="$PROJECT_DIR$/admin/control/control.php" />
@@ -151,6 +110,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/data/model/store.model.php" />
         <option value="$PROJECT_DIR$/admin/control/order.php" />
+        <option value="$PROJECT_DIR$/data/config/config.ini.php" />
       </list>
     </option>
   </component>
@@ -189,20 +149,7 @@
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="umeng" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,12 +207,12 @@
       <workItem from="1556184780432" duration="728000" />
       <workItem from="1556244632805" duration="4749000" />
       <workItem from="1556520707183" duration="2574000" />
-      <workItem from="1556596881428" duration="15291000" />
+      <workItem from="1556596881428" duration="15431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57417000" />
+    <option name="totallyTimeSpent" value="57557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -389,13 +336,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="87" selection-start-line="1" selection-start-column="87" selection-end-line="1" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -635,8 +575,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/control/order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="147" column="88" selection-start-line="147" selection-start-column="88" selection-end-line="147" selection-end-column="88" />
+        <state relative-caret-position="148">
+          <caret line="135" column="19" lean-forward="true" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config/config.ini.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
         </state>
       </provider>
     </entry>
