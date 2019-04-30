@@ -136,6 +136,10 @@ class orderControl extends SystemControl{
 	    }
 	    $order_list	= $model_order->getOrderList(array('pay_sn'=>$order_info['pay_sn'],'order_state'=>ORDER_STATE_NEW));
 	    $result = $logic_order->changeOrderReceivePay($order_list,'system',$this->admin_info['name'],$post);
+        require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'notification'.DS.'Umeng.php');
+        $um=new Umeng();
+        var_dump($um);
+
         if ($result['state']) {
             $this->log('将订单改为已收款状态,'.L('order_number').':'.$order_info['order_sn'],1);
         }
