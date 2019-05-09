@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/control/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/model/store.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/model/store.model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/control/store_goods_online.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/control/store_goods_online.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/control/order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="156" column="38" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
+            <state relative-caret-position="214">
+              <caret line="156" column="47" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/model/store.model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="52" column="64" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="64" />
+            <state relative-caret-position="484">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -37,7 +35,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addBundling</find>
       <find>delBundling</find>
       <find>getMansongList</find>
       <find>store_joinin_verify_open</find>
@@ -67,6 +64,7 @@
       <find>check_seller_name_exist</find>
       <find>新增分类</find>
       <find>goods_stcids</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -286,12 +284,12 @@
       <workItem from="1557048855593" duration="310000" />
       <workItem from="1557291138356" duration="454000" />
       <workItem from="1557382510538" duration="3505000" />
-      <workItem from="1557390751879" duration="385000" />
+      <workItem from="1557390751879" duration="717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63254000" />
+    <option name="totallyTimeSpent" value="63586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -343,13 +341,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/api/umeng/notification/android/AndroidListcast.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="91" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/api/umeng/notification/android/AndroidUnicast.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -630,17 +621,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/model/voucher.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="289" column="22" lean-forward="true" selection-start-line="289" selection-start-column="22" selection-end-line="289" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/model/store.model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="52" column="64" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="64" />
+        <state relative-caret-position="484">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/control/order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="156" column="38" selection-start-line="156" selection-start-column="38" selection-end-line="156" selection-end-column="38" />
+        <state relative-caret-position="214">
+          <caret line="156" column="47" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
         </state>
       </provider>
     </entry>

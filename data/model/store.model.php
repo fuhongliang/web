@@ -55,6 +55,16 @@ class storeModel extends Model {
         ))->find();
         return $data;
     }
+
+    /**
+     * @param $data
+     * @param $condition
+     * @return mixed
+     */
+    public function editOrderState($data,$condition) {
+        $result = $this->table('order')->where($condition)->update($data);
+        return $result;
+    }
     /**
      * 获取自营店铺的ID
      *
