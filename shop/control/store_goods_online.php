@@ -578,6 +578,7 @@ class store_goods_onlineControl extends BaseSellerControl {
                 $insert['goods_vat']         = $update_common['goods_vat'];
                 $insert['goods_commend']     = $update_common['goods_commend'];
                 $insert['goods_stcids']      = $update_common['goods_stcids'];
+                $insert['goods_stcid']      = $update_common['goods_stcids'];
                 $insert['is_virtual']        = $update_common['is_virtual'];
                 $insert['virtual_indate']    = $update_common['virtual_indate'];
                 $insert['virtual_limit']     = $update_common['virtual_limit'];

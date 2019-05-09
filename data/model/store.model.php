@@ -43,6 +43,18 @@ class storeModel extends Model {
         ))->find();
         return $data;
     }
+
+    /**获取自动接单
+     * @param $store_id
+     * @return mixed
+     */
+    public function getAutoReceiveOrder($store_id)
+    {
+        $data = $this->table('store')->field('auto_receive_order')->where(array(
+            'store_id' => $store_id,
+        ))->find();
+        return $data;
+    }
     /**
      * 获取自营店铺的ID
      *
