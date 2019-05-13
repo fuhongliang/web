@@ -68,7 +68,7 @@ class SmsDemo
      * 发送短信
      * @return stdClass
      */
-    public static function sendSms($phone_number,$code,$template_code) {
+    public static function sendSms($phone_number,$template_param,$template_code) {
 
         // 初始化SendSmsRequest实例用于设置发送短信的参数
         $request = new SendSmsRequest();
@@ -86,10 +86,7 @@ class SmsDemo
         $request->setTemplateCode($template_code);
 
         // 可选，设置模板参数, 假如模板中存在变量需要替换则为必填项
-        $request->setTemplateParam(json_encode(array(  // 短信模板中字段的值
-            "code"=>$code,
-            "product"=>"dsd"
-        ), JSON_UNESCAPED_UNICODE));
+        $request->setTemplateParam(json_encode($template_param, JSON_UNESCAPED_UNICODE));
 
         // 可选，设置流水号
         $request->setOutId("yourOutId");
