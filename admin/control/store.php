@@ -669,6 +669,11 @@ class storeControl extends SystemControl{
         $model_store_joinin = Model('store_joinin');
         $model_store_joinin->modify($param, array('member_id'=>$_POST['member_id']));
         if ($param['paying_amount'] > 0) {
+            require_once BASE_DATA_PATH.DS.'api'.DS.'smsapi'.DS.'aliyun-dysms-php-sdk'.DS.'api_sdk'.DS.'vendor'.DS.'autoload.php';
+            require_once BASE_DATA_PATH.DS.'api'.DS.'smsapi'.DS.'aliyun-dysms-php-sdk'.DS.'api_demo'.DS.'SmsDemo.php';
+            $code = rand('1000', '9999');
+            $sms=new SmsDemo();
+            $sms::sendSms('18594286622',$code,'SMS_165108396');
             showMessage('店铺入驻申请审核完成','index.php?act=store&op=store_joinin');
         } else {
             //如果开店支付费用为零，则审核通过后直接开通，无需再上传付款凭证
