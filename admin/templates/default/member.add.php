@@ -193,7 +193,17 @@ $(function(){
             member_mobile: {
                 required : true,
                 minlength: 11,
-                maxlength: 11
+                maxlength: 11,
+                remote   : {
+                    url :'index.php?act=member&op=ajax&branch=check_mobile',
+                    type:'get',
+                    data:{
+                        member_mobile : function(){
+                            return $('#member_mobile').val();
+                        },
+                        member_id : '<?php echo $output['member_array']['member_id'];?>'
+                    }
+                }
             },
             member_passwd: {
 				required : true,

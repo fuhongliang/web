@@ -278,6 +278,17 @@ class memberControl extends SystemControl{
 					echo 'false';exit;
 				}
 				break;
+            case 'check_mobile':
+                $model_member = Model('member');
+                $condition['member_mobile'] = $_GET['member_mobile'];
+                $condition['member_id'] = array('neq',intval($_GET['member_id']));
+                $list = $model_member->getMemberInfo($condition);
+                if (empty($list)){
+                    echo 'true';exit;
+                }else {
+                    echo 'false';exit;
+                }
+                break;
 		}
 	}
 
