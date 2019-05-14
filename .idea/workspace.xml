@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/control/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/model/store.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/model/store.model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/control/order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="139" column="26" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+            <state relative-caret-position="484">
+              <caret line="150" column="34" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -262,12 +259,12 @@
       <workItem from="1557737748175" duration="2436000" />
       <workItem from="1557798405114" duration="2822000" />
       <workItem from="1557813854278" duration="1079000" />
-      <workItem from="1557818899082" duration="2517000" />
+      <workItem from="1557818899082" duration="2758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87118000" />
+    <option name="totallyTimeSpent" value="87359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -603,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/control/order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="139" column="26" selection-start-line="139" selection-start-column="26" selection-end-line="139" selection-end-column="26" />
+        <state relative-caret-position="484">
+          <caret line="150" column="34" selection-start-line="150" selection-start-column="34" selection-end-line="150" selection-end-column="34" />
         </state>
       </provider>
     </entry>
