@@ -240,7 +240,8 @@ $(function(){
             member_mobile: {
                 required : '<?php echo "手机号必填"?>',
                 maxlength: '<?php echo "请输入11位手机号"?>',
-                minlength:  '<?php echo "请输入11位手机号"?>'
+                minlength:  '<?php echo "请输入11位手机号"?>',
+                remote   : '<?php echo "手机号已被占用"?>'
             },
             member_passwd : {
 				required : '<?php echo '密码不能为空'; ?>',
