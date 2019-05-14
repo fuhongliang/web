@@ -141,7 +141,7 @@ class orderControl extends SystemControl{
 	    $data=Model("store")->getdevicetokens($order_info['store_id']);
 
         require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'Umeng.php');
-var_dump($data);die;
+
         if($data['app_type'] == 1)
         {
             $android=new Umeng("5cc026e64ca357afec000039","ci54rxbqofvnru9mkflfwgz7xm0mrqb0");
