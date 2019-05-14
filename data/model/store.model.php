@@ -36,10 +36,10 @@ class storeModel extends Model {
      * @param $store_id
      * @return mixed
      */
-    public function getdevicetokens($store_id)
+    public function getdevicetokens($member_id)
     {
         $data = $this->table('umeng')->field('device_tokens,app_type')->where(array(
-            'store_id' => $store_id,
+            'member_id' => $member_id,
         ))->find();
         return $data;
     }
