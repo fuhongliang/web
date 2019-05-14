@@ -224,7 +224,7 @@ class memberControl extends SystemControl{
 				if (!empty($_POST['member_avatar'])){
 					$insert_array['member_avatar'] = trim($_POST['member_avatar']);
 				}
-var_dump($insert_array);die;
+
 				$result = $model_member->addMember($insert_array);
 				if ($result){
 					$url = array(
