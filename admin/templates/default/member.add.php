@@ -22,6 +22,10 @@
           <td class="vatop rowform"><input type="text" value="" name="member_name" id="member_name" class="txt"></td>
           <td class="vatop tips"></td>
         </tr>
+        <tr class="noborder">
+            <td class="vatop rowform"><input type="text" value="" name="member_mobile" id="member_mobile" class="txt"></td>
+            <td class="vatop tips"></td>
+        </tr>
         <tr>
           <td colspan="2" class="required"><label class="validation" for="member_passwd"><?php echo $lang['member_edit_password']?>:</label></td>
         </tr>
@@ -183,6 +187,11 @@ $(function(){
                     }
                 }
 			},
+            member_mobile: {
+                required : true,
+                minlength: 11,
+                maxlength: 11
+            },
             member_passwd: {
 				required : true,
                 maxlength: 20,
@@ -210,11 +219,16 @@ $(function(){
         },
         messages : {
 			member_name: {
-				required : '<?php echo $lang['member_add_name_null']?>',
-				maxlength: '<?php echo $lang['member_add_name_length']?>',
-				minlength: '<?php echo $lang['member_add_name_length']?>',
-				remote   : '<?php echo $lang['member_add_name_exists']?>'
-			},
+                required : '<?php echo $lang['member_add_name_null']?>',
+                maxlength: '<?php echo $lang['member_add_name_length']?>',
+                minlength: '<?php echo $lang['member_add_name_length']?>',
+                remote   : '<?php echo $lang['member_add_name_exists']?>'
+            },
+            member_mobile: {
+                required : '<?php echo "手机号必填"?>',
+                maxlength: '<?php echo "请输入11位手机号"?>',
+                minlength:  '<?php echo "请输入11位手机号"?>'
+            },
             member_passwd : {
 				required : '<?php echo '密码不能为空'; ?>',
                 maxlength: '<?php echo $lang['member_edit_password_tip']?>',
