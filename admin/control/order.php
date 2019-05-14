@@ -149,15 +149,13 @@ class orderControl extends SystemControl
 
         require(BASE_DATA_PATH . DS . 'api' . DS . 'umeng' . DS . 'Umeng.php');
 
-//        if($data['app_type'] == 1)
-//        {
-        $android = new Umeng("5cc026e64ca357afec000039", "ci54rxbqofvnru9mkflfwgz7xm0mrqb0");
-        $android->sendAndroidUnicast($data['device_tokens'], "新订单提示", "你有新的订单，请注意查收");
-//        }elseif ($data['app_type'] == 2)
-//        {
-        $ios = new Umeng("5cc7bee60cafb2129200044d", "l2rod9mlfopywtnjzkucp6sdh8bcbxkv");
-        $ios->sendIOSUnicast($data['device_tokens'], "你有新的订单，请注意查收");
-        //       }
+        if ($data['app_type'] == 1) {
+            $android = new Umeng("5cc026e64ca357afec000039", "ci54rxbqofvnru9mkflfwgz7xm0mrqb0");
+            $android->sendAndroidUnicast($data['device_tokens'], "新订单提示", "你有新的订单，请注意查收");
+        } elseif ($data['app_type'] == 2) {
+            $ios = new Umeng("5cc7bee60cafb2129200044d", "l2rod9mlfopywtnjzkucp6sdh8bcbxkv");
+            $ios->sendIOSUnicast($data['device_tokens'], "你有新的订单，请注意查收");
+        }
         $auto_receive_order_data = Model("store")->getAutoReceiveOrder($order_info['store_id']);
         if ($auto_receive_order_data['auto_receive_order'] == 1) {
             $res = Model("store")->editOrderState(['order_state' => 25], ['order_id' => $order_id]);
