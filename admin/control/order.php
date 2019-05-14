@@ -137,10 +137,11 @@ class orderControl extends SystemControl{
 	    }
 	    $order_list	= $model_order->getOrderList(array('pay_sn'=>$order_info['pay_sn'],'order_state'=>ORDER_STATE_NEW));
 	    $result = $logic_order->changeOrderReceivePay($order_list,'system',$this->admin_info['name'],$post);
-	    $data=Model("store")->getdevicetokens($order_info['buyer_id']);
+
+	    $data=Model("store")->getdevicetokens($order_info['store_id']);
 
         require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'Umeng.php');
-
+var_dump($data);die;
         if($data['app_type'] == 1)
         {
             $android=new Umeng("5cc026e64ca357afec000039","ci54rxbqofvnru9mkflfwgz7xm0mrqb0");

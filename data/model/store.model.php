@@ -36,8 +36,17 @@ class storeModel extends Model {
      * @param $store_id
      * @return mixed
      */
-    public function getdevicetokens($member_id)
+    public function getMemberId($store_id)
     {
+        $data = $this->table('store')->field('member_id')->where(array(
+            'store_id' => $store_id,
+        ))->find();
+        return $data['member_id'];
+    }
+
+    public function getdevicetokens($store_id)
+    {
+        $member_id=$this->getMemberId($store_id);
         $data = $this->table('umeng')->field('device_tokens,app_type')->where(array(
             'member_id' => $member_id,
         ))->find();
