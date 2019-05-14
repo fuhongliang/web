@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/control/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/store.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/templates/default/member.add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/default/member.add.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/templates/default/member.add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="229" column="54" selection-start-line="229" selection-start-column="54" selection-end-line="229" selection-end-column="54" />
+            <state relative-caret-position="550">
+              <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -343,12 +341,12 @@
       <workItem from="1557729909182" duration="1349000" />
       <workItem from="1557731334876" duration="3367000" />
       <workItem from="1557737748175" duration="2436000" />
-      <workItem from="1557798405114" duration="201000" />
+      <workItem from="1557798405114" duration="320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80901000" />
+    <option name="totallyTimeSpent" value="81020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -675,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/templates/default/member.add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="229" column="54" selection-start-line="229" selection-start-column="54" selection-end-line="229" selection-end-column="54" />
+        <state relative-caret-position="550">
+          <caret line="25" column="95" selection-start-line="25" selection-start-column="95" selection-end-line="25" selection-end-column="95" />
         </state>
       </provider>
     </entry>

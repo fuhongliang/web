@@ -23,6 +23,9 @@
           <td class="vatop tips"></td>
         </tr>
         <tr class="noborder">
+            <td colspan="2" class="required"><label class="validation" for="member_mobile">手机号码:</label></td>
+        </tr>
+        <tr class="noborder">
             <td class="vatop rowform"><input type="text" value="" name="member_mobile" id="member_mobile" class="txt"></td>
             <td class="vatop tips"></td>
         </tr>
