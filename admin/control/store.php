@@ -721,6 +721,7 @@ class storeControl extends SystemControl{
             if($store_id) {
                 $member = Model('member');
                 $data=$member->getMemberInfo(['member_id'=>$joinin_detail['member_id']], 'member_mobile');
+                var_dump($data);die;
                 //写入卖家账号
                 $seller_array = array();
                 $seller_array['seller_name'] = $joinin_detail['seller_name'];
