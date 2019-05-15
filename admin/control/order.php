@@ -156,19 +156,19 @@ class orderControl extends SystemControl
             $ios = new Umeng("5cc7bee60cafb2129200044d", "l2rod9mlfopywtnjzkucp6sdh8bcbxkv");
             $ios->sendIOSUnicast($data['device_tokens'], "你有新的订单，请注意查收");
         }
-        $auto_receive_order_data = Model("store")->getAutoReceiveOrder($order_info['store_id']);
-        if ($auto_receive_order_data['auto_receive_order'] == 1) {
-            $res = Model("store")->editOrderState(['order_state' => 25], ['order_id' => $order_id]);
-            if ($res) {
-                if ($data['app_type'] == 1) {
-                    $android = new Umeng("5cc026e64ca357afec000039", "ci54rxbqofvnru9mkflfwgz7xm0mrqb0");
-                    $android->sendAndroidUnicast($data['device_tokens'], "接单提示", "你有新的订单，系统已帮你接单");
-                } elseif ($data['app_type'] == 2) {
-                    $ios = new Umeng("5cc7bee60cafb2129200044d", "l2rod9mlfopywtnjzkucp6sdh8bcbxkv");
-                    $ios->sendIOSUnicast($data['device_tokens'], "你有新的订单，系统已帮你接单");
-                }
-            }
-        }
+//        $auto_receive_order_data = Model("store")->getAutoReceiveOrder($order_info['store_id']);
+//        if ($auto_receive_order_data['auto_receive_order'] == 1) {
+//            $res = Model("store")->editOrderState(['order_state' => 25], ['order_id' => $order_id]);
+//            if ($res) {
+//                if ($data['app_type'] == 1) {
+//                    $android = new Umeng("5cc026e64ca357afec000039", "ci54rxbqofvnru9mkflfwgz7xm0mrqb0");
+//                    $android->sendAndroidUnicast($data['device_tokens'], "接单提示", "你有新的订单，系统已帮你接单");
+//                } elseif ($data['app_type'] == 2) {
+//                    $ios = new Umeng("5cc7bee60cafb2129200044d", "l2rod9mlfopywtnjzkucp6sdh8bcbxkv");
+//                    $ios->sendIOSUnicast($data['device_tokens'], "你有新的订单，系统已帮你接单");
+//                }
+//            }
+//        }
         if ($result['state']) {
             $this->log('将订单改为已收款状态,' . L('order_number') . ':' . $order_info['order_sn'], 1);
         }
