@@ -669,7 +669,7 @@ class storeControl extends SystemControl{
         $model_store_joinin = Model('store_joinin');
         $model_store_joinin->modify($param, array('member_id'=>$_POST['member_id']));
         if ($param['paying_amount'] > 0) {
-            echo 1;
+
 //            require_once BASE_DATA_PATH.DS.'api'.DS.'smsapi'.DS.'aliyun-dysms-php-sdk'.DS.'api_sdk'.DS.'vendor'.DS.'autoload.php';
 //            require_once BASE_DATA_PATH.DS.'api'.DS.'smsapi'.DS.'aliyun-dysms-php-sdk'.DS.'api_demo'.DS.'SmsDemo.php';
 //            $code = rand('1000', '9999');
@@ -677,7 +677,7 @@ class storeControl extends SystemControl{
 //            $sms::sendSms('18594286622',$code,'SMS_165108396');
             showMessage('店铺入驻申请审核完成','index.php?act=store&op=store_joinin');
         } else {
-            echo 2;
+
             //如果开店支付费用为零，则审核通过后直接开通，无需再上传付款凭证
             $this->store_joinin_verify_open($joinin_detail);
         }
@@ -719,12 +719,15 @@ class storeControl extends SystemControl{
             $store_id = $model_store->addStore($shop_array);
 
             if($store_id) {
+                $member = Model('member');
+                $data=$member->getMemberInfo(['member_id'=>$joinin_detail['member_id']], 'member_mobile');
                 //写入卖家账号
                 $seller_array = array();
                 $seller_array['seller_name'] = $joinin_detail['seller_name'];
                 $seller_array['member_id'] = $joinin_detail['member_id'];
                 $seller_array['seller_group_id'] = 0;
                 $seller_array['store_id'] = $store_id;
+                $seller_array['member_mobile'] =$data['member_mobile'];
                 $seller_array['is_admin'] = 1;
                 $state = $model_seller->addSeller($seller_array);
             }
