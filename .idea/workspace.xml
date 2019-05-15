@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/control/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/store.php" afterDir="false" />
-    </list>
+    <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/control/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="723" column="36" selection-start-line="723" selection-start-column="36" selection-end-line="723" selection-end-column="36" />
+            <state relative-caret-position="488">
+              <caret line="722" column="106" selection-start-line="722" selection-start-column="106" selection-end-line="722" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -246,12 +244,12 @@
       <workItem from="1557798405114" duration="2822000" />
       <workItem from="1557813854278" duration="1079000" />
       <workItem from="1557818899082" duration="5720000" />
-      <workItem from="1557892145407" duration="1707000" />
+      <workItem from="1557892145407" duration="1763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92028000" />
+    <option name="totallyTimeSpent" value="92084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -599,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/control/store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="723" column="36" selection-start-line="723" selection-start-column="36" selection-end-line="723" selection-end-column="36" />
+        <state relative-caret-position="488">
+          <caret line="722" column="106" selection-start-line="722" selection-start-column="106" selection-end-line="722" selection-end-column="106" />
         </state>
       </provider>
     </entry>
