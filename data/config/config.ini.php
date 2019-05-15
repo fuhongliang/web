@@ -2,19 +2,19 @@
 
 
 $config = array();
-$config['base_site_url'] 		= 'http://47.111.27.189/web';
-$config['shop_site_url'] 		= 'http://47.111.27.189/web/shop';
-$config['cms_site_url'] 		= 'http://47.111.27.189/web/cms';
-$config['microshop_site_url'] 	= 'http://47.111.27.189/web/microshop';
-$config['circle_site_url'] 		= 'http://47.111.27.189/web/circle';
-$config['admin_site_url'] 		= 'http://47.111.27.189/web/admin';
-$config['mobile_site_url'] 		= 'http://47.111.27.189/web/mobile';
-$config['wap_site_url'] 		= 'http://47.111.27.189/web/wap';
-$config['chat_site_url'] 		= 'http://47.111.27.189/web/chat';
+$config['base_site_url'] 		= HOST_URL;
+$config['shop_site_url'] 		= HOST_URL.'/shop';
+$config['cms_site_url'] 		=HOST_URL. '/cms';
+$config['microshop_site_url'] 	= HOST_URL.'/microshop';
+$config['circle_site_url'] 		= HOST_URL.'/circle';
+$config['admin_site_url'] 		=HOST_URL. '/admin';
+$config['mobile_site_url'] 		=HOST_URL. '/mobile';
+$config['wap_site_url'] 		= HOST_URL.'/wap';
+$config['chat_site_url'] 		= HOST_URL.'/chat';
 $config['node_site_url'] 		= 'http://172.16.188.10:8090';
-$config['delivery_site_url']    = 'http://47.111.27.189/web/delivery';
-$config['upload_site_url']		= 'http://47.111.27.189/web/data/upload';
-$config['resource_site_url']	= 'http://47.111.27.189/web/data/resource';
+$config['delivery_site_url']    = HOST_URL.'/delivery';
+$config['upload_site_url']		= HOST_URL.'/data/upload';
+$config['resource_site_url']	= HOST_URL.'/data/resource';
 $config['version'] 		= '201601130001';
 $config['setup_date'] 	= '2019-04-02 16:54:37';
 $config['gip'] 			= 0;
@@ -57,5 +57,5 @@ $config['queue']['open'] = false;
 $config['queue']['host'] = '47.111.27.189';
 $config['queue']['port'] = 6379;
 $config['cache_open'] = false;
-$config['delivery_site_url']    = 'http://47.111.27.189/web/delivery';
+$config['delivery_site_url']    =HOST_URL. '/delivery';
 return $config;

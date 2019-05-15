@@ -21,6 +21,10 @@ if (!is_file(BASE_ROOT_PATH."/install/lock") && is_file(BASE_ROOT_PATH."/install
     }
     exit;
 }
+
+
+define('HOST_URL','http://47.111.27.189/web');
+
 define('BASE_CORE_PATH',BASE_ROOT_PATH.'/core');
 define('BASE_DATA_PATH',BASE_ROOT_PATH.'/data');
 define('DS','/');
