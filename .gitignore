@@ -3,6 +3,7 @@
 /public/storage
 /storage/*.key
 .idea
+global.php
 /.vscode
 /.vagrant
 Homestead.json
