@@ -23,7 +23,7 @@ if (!is_file(BASE_ROOT_PATH."/install/lock") && is_file(BASE_ROOT_PATH."/install
 }
 
 
-define('HOST_URL','http://47.92.244.60:8888/web');
+define('HOST_URL','http://47.92.244.60:8888');
 
 define('BASE_CORE_PATH',BASE_ROOT_PATH.'/core');
 define('BASE_DATA_PATH',BASE_ROOT_PATH.'/data');
