@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="581a3988-4f9e-4607-b0ba-d5a4e98cb9d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/control/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/control/store.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/control/store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/control/seller_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/control/seller_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/default/seller/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/default/seller/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,30 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/control/order.php">
+        <entry file="file://$PROJECT_DIR$/admin/control/store.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="157" column="8" selection-end-line="322" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/model/store.model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="422">
+              <caret line="671" column="23" selection-start-line="671" selection-start-column="23" selection-end-line="671" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -43,7 +28,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>auth_code</find>
       <find>modify_paypwd</find>
       <find>makeSn</find>
       <find>BASE_DATA_PATH</find>
@@ -73,6 +57,7 @@
       <find>store_bind_class</find>
       <find>join</find>
       <find>getdevicetokens</find>
+      <find>user_name</find>
     </findStrings>
     <replaceStrings>
       <replace>47.92.244.60</replace>
@@ -91,8 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-3/global.php" />
-        <option value="$PROJECT_DIR$/shop/templates/default/member/member_order.index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-3/member_order.index.php" />
         <option value="$PROJECT_DIR$/shop/control/store_deliver.php" />
         <option value="$PROJECT_DIR$/shop/templates/default/seller/index.php" />
@@ -134,13 +117,16 @@
         <option value="$PROJECT_DIR$/data/api/smsapi/aliyun/demo/sendSms.php" />
         <option value="$PROJECT_DIR$/data/api/smsapi/aliyun-dysms-php-sdk/api_demo/SmsDemo.php" />
         <option value="$PROJECT_DIR$/admin/templates/default/store_joinin.detail.php" />
-        <option value="$PROJECT_DIR$/admin/control/store.php" />
         <option value="$PROJECT_DIR$/admin/templates/default/member.add.php" />
         <option value="$PROJECT_DIR$/admin/control/member.php" />
         <option value="$PROJECT_DIR$/data/model/member.model.php" />
         <option value="$PROJECT_DIR$/data/model/store.model.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/admin/control/order.php" />
+        <option value="$PROJECT_DIR$/admin/templates/default/login.php" />
+        <option value="$PROJECT_DIR$/shop/templates/default/seller/login.php" />
+        <option value="$PROJECT_DIR$/shop/control/seller_login.php" />
+        <option value="$PROJECT_DIR$/admin/control/store.php" />
       </list>
     </option>
   </component>
@@ -157,7 +143,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,21 +161,11 @@
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,18 +234,19 @@
       <workItem from="1557737748175" duration="2436000" />
       <workItem from="1557798405114" duration="2822000" />
       <workItem from="1557813854278" duration="1079000" />
-      <workItem from="1557818899082" duration="5581000" />
+      <workItem from="1557818899082" duration="5720000" />
+      <workItem from="1557892145407" duration="1170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90182000" />
+    <option name="totallyTimeSpent" value="91491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,18 +292,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/api/refund/alipay/notify_url.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/api/refund/alipay/vr_notify_url.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/api/payment/alipay/return_url_pd_order.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/api/payment/alipay/return_url_real_order.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/shop/api/payment/alipay/return_url_vr_order.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -471,13 +435,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/api/smsapi/aliyun/demo/sendSms.php" />
-    <entry file="file://$PROJECT_DIR$/admin/control/store_joinin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1768">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/api/smsapi/aliyun-dysms-php-sdk/api_demo/SmsDemo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -556,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/control/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="631" column="16" selection-start-line="631" selection-start-column="16" selection-end-line="631" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/model/admin.model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -584,24 +534,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/control/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="154" column="43" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/model/store.model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="990">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/control/order.php">
+    <entry file="file://$PROJECT_DIR$/admin/templates/default/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="157" column="8" selection-end-line="322" />
+        <state relative-caret-position="321">
+          <caret line="15" column="60" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/default/seller/seller_log.list.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/control/seller_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="43" column="72" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/templates/default/seller/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="130" column="31" selection-start-line="130" selection-start-column="19" selection-end-line="130" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/control/store_joinin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1878">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/control/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="671" column="23" selection-start-line="671" selection-start-column="23" selection-end-line="671" selection-end-column="23" />
         </state>
       </provider>
     </entry>
