@@ -8,6 +8,7 @@
 
 defined('InShopNC') or exit('Access Invalid!');
 
+
 class SystemControl{
 
 	/**
@@ -312,4 +313,5 @@ class SystemControl{
 	        $model_cron->addCron($data);
 	    }
 	}
+
 }

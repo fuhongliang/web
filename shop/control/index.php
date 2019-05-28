@@ -57,7 +57,6 @@ class indexControl extends BaseHomeControl{
 			$member_order_info['order_noeval_count'] = $model_order->getOrderCountByID('buyer',$_SESSION['member_id'],'EvalCount');
 			Tpl::output('member_order_info',$member_order_info);
 		}
-
 		Model('seo')->type('index')->show();
 		Tpl::showpage('index');
 	}
@@ -83,6 +82,7 @@ class indexControl extends BaseHomeControl{
 		} else {
 			$array = array_values($array);
 		}
+
 		echo $_GET['callback'].'('.json_encode($array).')';
 	}
 
