@@ -200,11 +200,11 @@ class loginControl extends BaseHomeControl {
 			Model('goods_browse')->mergebrowse($_SESSION['member_id'],$_SESSION['store_id']);
 
 			$_POST['ref_url']   = (strstr($_POST['ref_url'],'logout')=== false && !empty($_POST['ref_url']) ? $_POST['ref_url'] : 'index.php?act=member_information&op=member');
-	            if ($_GET['inajax'] == 1){
+//	            if ($_GET['inajax'] == 1){
 	                showDialog('',$_POST['ref_url'] == '' ? 'reload' : $_POST['ref_url'],'js');
-	            } else {
-	                redirect($_POST['ref_url']);
-	            }
+//	            } else {
+//	                redirect($_POST['ref_url']);
+//	            }
 	        } else {
 	            showDialog($member_info['error']);
 	        }
