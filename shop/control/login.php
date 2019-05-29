@@ -169,6 +169,7 @@ class loginControl extends BaseHomeControl {
 		$model_member	= Model('member');
 		$model_member->checkloginMember();
 		$result = chksubmit(true,C('captcha_status_register'),'num');
+
 		if ($result){
 			if ($result === -11){
 				showDialog($lang['invalid_request'],'','error');
@@ -178,13 +179,15 @@ class loginControl extends BaseHomeControl {
 		} else {
 		    showDialog($lang['invalid_request'],'','error');
 		}
+
         $register_info = array();
         $register_info['username'] = $_POST['user_name'];
         $register_info['password'] = $_POST['password'];
         $register_info['password_confirm'] = $_POST['password_confirm'];
-        $register_info['email'] = $_POST['email'];
+        $register_info['member_mobile'] = $_POST['member_mobile'];
 		//添加奖励积分ID BY haoid.cn V3
 		$register_info['inviter_id'] = intval(base64_decode($_COOKIE['uid']))/1;
+
         $member_info = $model_member->register($register_info);
         if(!isset($member_info['error'])) {
             $model_member->createSession($member_info,true);
@@ -241,7 +244,18 @@ class loginControl extends BaseHomeControl {
 			echo 'true';
 		}
 	}
-
+    public function member_mobileOp() {
+        $model_member = Model('member');
+        if (!preg_match("/^1[34578]{1}\d{9}$/", $_GET['member_mobile'])) {
+            echo 'false';exit;
+        }
+        $check_member_email	= $model_member->getMemberInfo(array('member_mobile'=>$_GET['member_mobile']));
+        if(is_array($check_member_email) && count($check_member_email)>0) {
+            echo 'false';
+        } else {
+            echo 'true';
+        }
+    }
 	/**
 	 * 忘记密码页面
 	 */

@@ -204,7 +204,7 @@ class memberModel extends Model
             array("input" => $register_info["username"], "require" => "true", "message" => '用户名不能为空'),
             array("input" => $register_info["password"], "require" => "true", "message" => '密码不能为空'),
             array("input" => $register_info["password_confirm"], "require" => "true", "validator" => "Compare", "operator" => "==", "to" => $register_info["password"], "message" => '密码与确认密码不相同'),
-            array("input" => $register_info["email"], "require" => "true", "validator" => "email", "message" => '电子邮件格式不正确'),
+            array("input" => $register_info["member_mobile"], "require" => "true", "message" => '手机号不正确'),
         );
         $error                       = $obj_validate->validate();
         if ($error != '') {
@@ -226,7 +226,7 @@ class memberModel extends Model
         $member_info                  = array();
         $member_info['member_name']   = $register_info['username'];
         $member_info['member_passwd'] = $register_info['password'];
-        $member_info['member_email']  = $register_info['email'];
+        $member_info['member_mobile']  = $register_info['member_mobile'];
         //添加邀请人(推荐人)会员积分 by haoid.cn
         $member_info['inviter_id'] = $register_info['inviter_id'];
         $insert_id                 = $this->addMember($member_info);
@@ -275,7 +275,9 @@ class memberModel extends Model
             $member_info['member_id']             = $param['member_id'];
             $member_info['member_name']           = $param['member_name'];
             $member_info['member_passwd']         = md5(trim($param['member_passwd']));
-            $member_info['member_email']          = $param['member_email'];
+            $member_info['member_mobile']          = $param['member_mobile'];
+            $member_info['member_mobile_bind']          = 1;
+
             $member_info['member_time']           = TIMESTAMP;
             $member_info['member_login_time']     = TIMESTAMP;
             $member_info['member_mobile']         = $param['member_mobile'];

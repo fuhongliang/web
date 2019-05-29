@@ -22,7 +22,7 @@ if (!is_file(BASE_ROOT_PATH."/install/lock") && is_file(BASE_ROOT_PATH."/install
     exit;
 }
 
-define('HOST_URL','http://127.0.0.1/web');
+define('HOST_URL','http://47.111.27.189:2345');
 
 
 
