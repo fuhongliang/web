@@ -4,11 +4,9 @@
  *
  * 包括系统后台父类
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 defined('InShopNC') or exit('Access Invalid!');
-
-
 class SystemControl{
 
 	/**
@@ -313,5 +311,4 @@ class SystemControl{
 	        $model_cron->addCron($data);
 	    }
 	}
-
 }

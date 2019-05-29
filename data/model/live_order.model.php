@@ -3,7 +3,7 @@
  * 线下抢购订单管理
  *
  * 
- *by haoid.cn 好商城V3 运营版
+ *by 33hao.com 好商城V3 运营版
  */
 defined('InShopNC') or exit('Access Invalid!');
 class live_orderModel extends Model {

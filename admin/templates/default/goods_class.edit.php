@@ -76,7 +76,7 @@
             % </td>
           <td class="vatop tips">必须为0-100的整数</td>
         </tr>
-	<!--v3-10 haoid.cn-->
+	<!--v3-10 33hao.com-->
 	<tr>
           <td colspan="2" class="required"><label for="parent_id"><?php echo $lang['goods_class_add_sup_class'];?>:</label></td>
         </tr>

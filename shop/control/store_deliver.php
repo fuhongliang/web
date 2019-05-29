@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -81,8 +81,7 @@ class store_deliverControl extends BaseSellerControl {
 		$condition['order_id'] = $order_id;
 		$condition['store_id'] = $_SESSION['store_id'];
 		$order_info = $model_order->getOrderInfo($condition,array('order_common','order_goods'));
-		$if_allow_send = intval($order_info['lock_state']) || !in_array($order_info['order_state'],array(ORDER_STATE_NEEDPAY,ORDER_STATE_SEND));
-
+		$if_allow_send = intval($order_info['lock_state']) || !in_array($order_info['order_state'],array(ORDER_STATE_PAY,ORDER_STATE_SEND));
 		if ($if_allow_send) {
 		    showMessage(Language::get('wrong_argument'),'','html','error');
 		}

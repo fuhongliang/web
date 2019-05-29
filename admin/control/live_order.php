@@ -5,7 +5,7 @@
  *
  *
  *
- * by www.haoid.cn 33hao 开发调试*/
+ * by www.33hao.com 33hao 开发调试*/
 
 defined('InShopNC') or exit('Access Invalid!');
 class live_orderControl extends SystemControl{

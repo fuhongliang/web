@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 defined('InShopNC') or exit('Access Invalid!');
 
@@ -203,7 +203,6 @@ class memberControl extends SystemControl{
 			$obj_validate->validateparam = array(
 			    array("input"=>$_POST["member_name"], "require"=>"true", "message"=>$lang['member_add_name_null']),
 			    array("input"=>$_POST["member_passwd"], "require"=>"true", "message"=>'密码不能为空'),
-                array("input"=>$_POST["member_mobile"], "require"=>"true", "message"=>'手机号不能为空'),
 			    array("input"=>$_POST["member_email"], "require"=>"true", 'validator'=>'Email', "message"=>$lang['member_edit_valid_email'])
 			);
 			$error = $obj_validate->validate();
@@ -213,7 +212,6 @@ class memberControl extends SystemControl{
 				$insert_array = array();
 				$insert_array['member_name']	= trim($_POST['member_name']);
 				$insert_array['member_passwd']	= trim($_POST['member_passwd']);
-                $insert_array['member_mobile']	= trim($_POST['member_mobile']);
 				$insert_array['member_email']	= trim($_POST['member_email']);
 				$insert_array['member_truename']= trim($_POST['member_truename']);
 				$insert_array['member_sex'] 	= trim($_POST['member_sex']);
@@ -280,17 +278,6 @@ class memberControl extends SystemControl{
 					echo 'false';exit;
 				}
 				break;
-            case 'check_mobile':
-                $model_member = Model('member');
-                $condition['member_mobile'] = $_GET['member_mobile'];
-                $condition['member_id'] = array('neq',intval($_GET['member_id']));
-                $list = $model_member->getMemberInfo($condition);
-                if (empty($list)){
-                    echo 'true';exit;
-                }else {
-                    echo 'false';exit;
-                }
-                break;
 		}
 	}
 

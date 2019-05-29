@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao 好商城V3  www.haoid.cn 开发
+ * by 33hao 好商城V3  www.33hao.com 开发
  */
 defined('InShopNC') or exit('Access Invalid!');
 class storeModel extends Model {
@@ -32,48 +32,6 @@ class storeModel extends Model {
         dkcache('own_shop_ids');
     }
 
-    /**获取token
-     * @param $store_id
-     * @return mixed
-     */
-    public function getMemberId($store_id)
-    {
-        $data = $this->table('store')->field('member_id')->where(array(
-            'store_id' => $store_id,
-        ))->find();
-        return $data['member_id'];
-    }
-
-    public function getdevicetokens($store_id)
-    {
-        $member_id=$this->getMemberId($store_id);
-        $data = $this->table('umeng')->field('device_tokens,app_type')->where(array(
-            'member_id' => $member_id,
-        ))->find();
-        return $data;
-    }
-
-    /**获取自动接单
-     * @param $store_id
-     * @return mixed
-     */
-    public function getAutoReceiveOrder($store_id)
-    {
-        $data = $this->table('store')->field('auto_receive_order')->where(array(
-            'store_id' => $store_id,
-        ))->find();
-        return $data;
-    }
-
-    /**
-     * @param $data
-     * @param $condition
-     * @return mixed
-     */
-    public function editOrderState($data,$condition) {
-        $result = $this->table('order')->where($condition)->update($data);
-        return $result;
-    }
     /**
      * 获取自营店铺的ID
      *
@@ -328,7 +286,7 @@ class storeModel extends Model {
         }
         return $hot_collect_list;
     }
-	//by haoid.cn 店铺列表新增项
+	//by 33hao.com 店铺列表新增项
 /**
      * 获取店铺列表页附加信息
      *

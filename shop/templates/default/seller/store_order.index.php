@@ -144,9 +144,7 @@
 		<?php if ($order['if_spay_price']) { ?>
         <p><a href="javascript:void(0)" class="ncsc-btn-mini ncsc-btn-green mt10" uri="index.php?act=store_order&op=change_state&state_type=spay_price&order_sn=<?php echo $order['order_sn']; ?>&order_id=<?php echo $order['order_id']; ?>" dialog_width="480" dialog_title="<?php echo $lang['store_order_modify_price'];?>" nc_type="dialog"  dialog_id="seller_order_adjust_fee" id="order<?php echo $order['order_id']; ?>_action_adjust_fee" /><i class="icon-pencil"></i>修改价格</a></p>
 		<?php }?>
-              <?php if ($order['if_store_receive']) { ?>
-                  <p><a class="ncsc-btn ncsc-btn-green mt10" href="#"/><i class="icon-truck"></i>商家接单</a></p>
-              <?php } ?>
+        
         <!-- 发货 -->
         <?php if ($order['if_send']) { ?>
         <p><a class="ncsc-btn ncsc-btn-green mt10" href="index.php?act=store_deliver&op=send&order_id=<?php echo $order['order_id']; ?>"/><i class="icon-truck"></i><?php echo $lang['store_order_send'];?></a></p>

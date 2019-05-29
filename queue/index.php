@@ -3,7 +3,7 @@
  * 队列
  *
  * 
- * by 33hao www.haoid.cn 二次开发修正版本
+ * by 33hao www.33hao.com 二次开发修正版本
  */
 
 

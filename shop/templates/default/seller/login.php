@@ -126,9 +126,9 @@ $(document).ready(function() {
     <input name="nchash" type="hidden" value="<?php echo $output['nchash'];?>" />
     <input type="hidden" name="form_submit" value="ok" />
     <div class="input">
-      <label>手机号</label>
+      <label>用户名</label>
       <span class="repuired"></span>
-      <input name="member_phone" type="text" autocomplete="off" class="text" autofocus>
+      <input name="seller_name" type="text" autocomplete="off" class="text" autofocus>
       <span class="ico"><i class="icon-user"></i></span> </div>
     <div class="input">
       <label>密码</label>

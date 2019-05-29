@@ -107,7 +107,7 @@
         </dl>
         <ul>
           <li><a href="index.php?act=store_order&op=index&state_type=state_new"><?php echo $lang['store_order_pay'];?> <strong id="nc_payment"></strong></a></li>
-          <li><a href="index.php?act=store_order&op=index&state_type=state_needpay"><?php echo $lang['store_shipped'];?> <strong id="nc_delivery"></strong></a></li>
+          <li><a href="index.php?act=store_order&op=index&state_type=state_pay"><?php echo $lang['store_shipped'];?> <strong id="nc_delivery"></strong></a></li>
           <li><a href="index.php?act=store_refund&lock=2"> <?php echo '售前退款';?> <strong id="nc_refund_lock"></strong></a></li>
           <li><a href="index.php?act=store_refund&lock=1"> <?php echo '售后退款';?> <strong id="nc_refund"></strong></a></li>
           <li><a href="index.php?act=store_return&lock=2"> <?php echo '售前退货';?> <strong id="nc_return_lock"></strong></a></li>

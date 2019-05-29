@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -32,7 +32,7 @@ class seller_loginControl extends BaseSellerControl {
         $result = chksubmit(true,true,'num');
         if ($result){
             if ($result === -11){
-                showDialog('手机号或密码错误','','error');
+                showDialog('用户名或密码错误','','error');
             } elseif ($result === -12){
                 showDialog('验证码错误','','error');
             }
@@ -41,7 +41,7 @@ class seller_loginControl extends BaseSellerControl {
         }
 
         $model_seller = Model('seller');
-        $seller_info = $model_seller->getSellerInfo(array('member_mobile' => $_POST['member_phone']));
+        $seller_info = $model_seller->getSellerInfo(array('seller_name' => $_POST['seller_name']));
         if($seller_info) {
 
             $model_member = Model('member');

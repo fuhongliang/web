@@ -1,7 +1,7 @@
 <?php
 /**
  * 前台闲置物品搜索页面 v3-b12
- * by haoid.cn
+ * by 33hao.com
  */
 defined('InShopNC') or exit('Access Invalid!');
 

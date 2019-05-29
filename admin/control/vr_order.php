@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 defined('InShopNC') or exit('Access Invalid!');
 class vr_orderControl extends SystemControl{
@@ -158,7 +158,7 @@ class vr_orderControl extends SystemControl{
         //显示系统自动取消订单日期
         if ($order_info['order_state'] == ORDER_STATE_NEW) {
             //$order_info['order_cancel_day'] = $order_info['add_time'] + ORDER_AUTO_CANCEL_DAY * 24 * 3600;
-			// by haoid.cn
+			// by 33hao.com
 			$order_info['order_cancel_day'] = $order_info['add_time'] + ORDER_AUTO_CANCEL_DAY + 3 * 24 * 3600;
         }
 

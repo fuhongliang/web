@@ -4,7 +4,7 @@
  *
  * 公共方法
  *
- * by haoid.cn 好商城V4 运营版
+ * by 33hao.com 好商城V4 运营版
  */
 defined('InShopNC') or exit('Access Invalid!');
 

@@ -18,7 +18,7 @@
       'adv_id' => '934',
       'ap_id' => '1046',
       'adv_title' => '闲置首页中部短栏广告4',
-      'adv_content' => 'a:2:{s:7:"adv_pic";s:36:"a18f85f81e845a1055726388334df19f.jpg";s:11:"adv_pic_url";s:14:"www.haoid.cn";}',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:36:"a18f85f81e845a1055726388334df19f.jpg";s:11:"adv_pic_url";s:14:"www.33hao.com";}',
       'adv_start_date' => '1328025600',
       'adv_end_date' => '1622476800',
       'slide_sort' => '0',

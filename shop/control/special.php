@@ -3,7 +3,7 @@
  * cms专题
  *
  * @copyright  QQ355716601
- * @link       http://www.haoid.cn
+ * @link       http://33haocom.taobao.com
  */
 defined('InShopNC') or exit('Access Invalid!');
 class specialControl extends BaseHomeControl{

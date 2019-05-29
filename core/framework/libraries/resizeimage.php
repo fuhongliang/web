@@ -3,7 +3,7 @@
  * 图片缩略
  * 
  *
- * @package    library* www.haoid.cn 专业团队 提供售后服务
+ * @package    library* www.33hao.com 专业团队 提供售后服务
  */
 defined('InShopNC') or exit('Access Invalid!');
 class ResizeImage{

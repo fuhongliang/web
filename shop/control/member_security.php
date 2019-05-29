@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -96,9 +96,9 @@ class member_securityControl extends BaseMemberControl {
             if (empty($member_common_info) || !is_array($member_common_info)) {
                 showMessage('验证失败','','html','error');
             }
-//            if ($member_common_info['auth_code'] != $_POST['auth_code'] || TIMESTAMP - $member_common_info['send_acode_time'] > 1800) {
-//                showMessage('验证码已被使用或超时，请重新获取验证码','','html','error');
-//            }
+            if ($member_common_info['auth_code'] != $_POST['auth_code'] || TIMESTAMP - $member_common_info['send_acode_time'] > 1800) {
+                showMessage('验证码已被使用或超时，请重新获取验证码','','html','error');
+            }
             $data = array();
             $data['auth_code'] = '';
             $data['send_acode_time'] = 0;

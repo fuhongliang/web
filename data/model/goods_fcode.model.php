@@ -2,7 +2,7 @@
 /**
  * 商品F码模型
  *
- * by haoid.cn 好商城V3 运营版
+ * by 33hao.com 好商城V3 运营版
  */
 defined('InShopNC') or exit('Access Invalid!');
 class goods_fcodeModel extends Model {

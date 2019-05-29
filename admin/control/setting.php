@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 defined('InShopNC') or exit('Access Invalid!');
 class settingControl extends SystemControl{
@@ -104,7 +104,7 @@ class settingControl extends SystemControl{
 				$update_array['seller_center_logo'] = $_POST['seller_center_logo'];
 			}
 			$update_array['icp_number'] = $_POST['icp_number'];
-			//设置表 400电话 by haoid.cn
+			//设置表 400电话 by 33hao.com
 			$update_array['site_tel400'] = $_POST['site_tel400'];
 			$update_array['site_status'] = $_POST['site_status'];
 			$update_array['closed_reason'] = $_POST['closed_reason'];

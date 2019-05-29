@@ -1,6 +1,6 @@
 <?php
 /**
- * 所有店铺首页  v3-b12 好商城v3 haoid.cn
+ * 所有店铺首页  v3-b12 好商城v3 33hao.com
  */
 
 //use shopnc\Tpl;

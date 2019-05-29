@@ -1,7 +1,7 @@
 <?php
 /**
  * 闲置图片上传操作
- * by haoid.cn
+ * by 33hao.com
  */
 defined('InShopNC') or exit('Access Invalid!');
 class flea_albumControl extends BaseFleaMemberControl {

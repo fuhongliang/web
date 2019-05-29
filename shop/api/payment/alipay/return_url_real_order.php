@@ -3,7 +3,7 @@
  * 支付宝返回地址 v3-b12
  *
  * 
- * by 好商城 www.haoid.cn 开发
+ * by 好商城 www.33hao.com 开发
  */
 $_GET['act']	= 'payment';
 $_GET['op']		= 'return';

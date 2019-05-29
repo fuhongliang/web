@@ -2,7 +2,6 @@
 <!doctype html> 
 <html lang="zh">
 <head>
-    <meta name=referrer content=no-referrer>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>">
 <title><?php echo $output['html_title'];?></title>
 <meta name="renderer" content="webkit|ie-comp|ie-stand">

@@ -3,7 +3,7 @@
  * 财付通返回地址
  *
  * 
- * by 33hao 好商城V3  www.haoid.cn 开发
+ * by 33hao 好商城V3  www.33hao.com 开发
  */
 error_reporting(7);
 $_GET['act']	= 'payment';

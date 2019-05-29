@@ -2,7 +2,7 @@
 /**
  * 所有店铺分类  v3-b12
   *
-  *好商城v3 haoid.cn
+  *好商城v3 33hao.com
  */
 
 defined('InShopNC') or exit('Access Invalid!');

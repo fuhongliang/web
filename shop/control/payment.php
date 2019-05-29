@@ -3,7 +3,7 @@
  * 支付入口 v3-b12
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -319,11 +319,6 @@ class paymentControl extends BaseHomeControl{
 		        showMessage('支付状态更新失败',$url,'html','error');
 		    }
 		}
-
-//        $data=Model("store")->getdevicetokens($order_info['store_id']);
-//        require(BASE_DATA_PATH.DS.'api'.DS.'umeng'.DS.'Umeng.php');
-//        $um=new Umeng();
-//        $um->sendAndroidUnicast($data['device_tokens'],"新订单提示","你新的外卖订单，请注意查收");
 
 		//支付成功后跳转
 		if ($order_type == 'real_order') {

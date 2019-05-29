@@ -5,7 +5,7 @@
  * 
  *
  *
- * by 33hao www.haoid.cn 开发修正
+ * by 33hao www.33hao.com 开发修正
  */
 defined('InShopNC') or exit('Access Invalid!');
 class cms_index_moduleModel extends Model{

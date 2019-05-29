@@ -6,7 +6,7 @@
  *
  *
  *
- * @package    library* www.haoid.cn 专业团队 提供售后服务
+ * @package    library* www.33hao.com 专业团队 提供售后服务
  */
 defined('InShopNC') or exit('Access Invalid!');
 class GdImage{
@@ -117,7 +117,7 @@ class GdImage{
 	 * <?php
 	 * 		$img = new GDImage();
 	 * 		//文字水印
-	 * 		$img->wm_text = "www.haoid.cn";
+	 * 		$img->wm_text = "www.33hao.com";
 	 * 		$img->wm_text_font = "./STXINWEI.TTF";
 	 * 		//图片水印
 	 * 		$img->wm_image_name="水印图片名";

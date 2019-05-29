@@ -99,29 +99,28 @@
   <table border="0" cellpadding="0" cellspacing="0" class="store-joinin">
     <thead>
       <tr>
-        <th colspan="20">店铺信息</th>
+        <th colspan="20">营业执照信息（副本）</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>门脸照<br />
-        </th>
-        <td colspan="20"><img src="http://pqk40fvkr.bkt.clouddn.com/<?php echo $output['joinin_detail']['face_img'];?>" alt="" /> </a></td>
+        <th class="w150">营业执照号：</th>
+        <td><?php echo $output['joinin_detail']['business_licence_number'];?></td></tr><tr>
+      
+        <th>营业执照所在地：</th>
+        <td><?php echo $output['joinin_detail']['business_licence_address'];?></td></tr><tr>
+      
+        <th>营业执照有效期：</th>
+        <td><?php echo $output['joinin_detail']['business_licence_start'];?> - <?php echo $output['joinin_detail']['business_licence_end'];?></td>
       </tr>
       <tr>
-          <th>店内照<br />
-          </th>
-          <td colspan="20"><img src="http://pqk40fvkr.bkt.clouddn.com/<?php echo $output['joinin_detail']['store_img'];?>" alt="" /> </a></td>
+        <th>法定经营范围：</th>
+        <td colspan="20"><?php echo $output['joinin_detail']['business_sphere'];?></td>
       </tr>
       <tr>
-          <th>logo<br />
-          </th>
-          <td colspan="20"><img src="http://pqk40fvkr.bkt.clouddn.com/<?php echo $output['joinin_detail']['logo_img'];?>" alt="" /> </a></td>
-      </tr>
-      <tr>
-          <th>身份证<br />
-          </th>
-          <td colspan="20"><img src="http://pqk40fvkr.bkt.clouddn.com/<?php echo $output['joinin_detail']['ID_card'];?>" alt="" /> </a></td>
+        <th>营业执照<br />
+电子版：</th>
+        <td colspan="20"><a nctype="nyroModal"  href="<?php echo getStoreJoininImageUrl($output['joinin_detail']['business_licence_number_electronic']);?>"> <img src="<?php echo getStoreJoininImageUrl($output['joinin_detail']['business_licence_number_electronic']);?>" alt="" /> </a></td>
       </tr>
     </tbody>
   </table>
@@ -315,7 +314,7 @@
     <?php if(in_array(intval($output['joinin_detail']['joinin_state']), array(STORE_JOIN_STATE_PAY, STORE_JOIN_STATE_FINAL))) {?>
     <tr>
         <th>付款凭证：</th>
-        <td><a nctype="nyroModal"  href="<?php echo getStoreJoininImageUrl($output['joinin_detail']['paying_money_certificate']);?>"> <img src="http://pqk40fvkr.bkt.clouddn.com/<?php echo $output['joinin_detail']['paying_money_certificate'];?>" alt="" /> </a></td>
+        <td><a nctype="nyroModal"  href="<?php echo getStoreJoininImageUrl($output['joinin_detail']['paying_money_certificate']);?>"> <img src="<?php echo getStoreJoininImageUrl($output['joinin_detail']['paying_money_certificate']);?>" alt="" /> </a></td>
     </tr>
     <tr>
         <th>付款凭证说明：</th>

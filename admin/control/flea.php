@@ -1,8 +1,8 @@
 <?php
 /**
-好商城V3 haoid.cn 提供
+好商城V3 33hao.com 提供
 
-网址：www.haoid.cn
+网址：www.33hao.com
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  */

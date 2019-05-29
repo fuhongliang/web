@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao www.haoid.cn 开发修正
+ * by 33hao www.33hao.com 开发修正
  */
 
 
@@ -140,7 +140,7 @@ class mb_specialControl extends SystemControl{
                 echo json_encode(array('error' => '广告条板块只能添加一个'));die;
             }
         }
-	//推荐只能添加一个 haoid.cn v3-10
+	//推荐只能添加一个 33hao.com v3-10
         if($param['item_type'] == 'goods1') {
             $result = $model_mb_special->isMbSpecialItemExist($param);
             if($result) {
@@ -187,7 +187,7 @@ class mb_specialControl extends SystemControl{
      */
     public function special_item_editOp() {
         $model_mb_special = Model('mb_special');
-	// haoid.cn v3-10
+	// 33hao.com v3-10
 	$theitemid=$_GET['item_id'];
         $item_info = $model_mb_special->getMbSpecialItemInfoByID($theitemid);
         Tpl::output('item_info', $item_info);
@@ -249,7 +249,7 @@ class mb_specialControl extends SystemControl{
     }
 
     /**
-     * 商品列表  haoid.cn v3-10
+     * 商品列表  33hao.com v3-10
      */
 	 
     public function goods_listOp() {	

@@ -33,9 +33,9 @@
                   </dd>
                 </dl>
                 <dl class="mt15">
-                  <dt>手机号：</dt>
+                  <dt><?php echo $lang['login_register_email'];?>：</dt>
                   <dd>
-                    <input type="text" id="email" name="member_mobile" class="text" tipMsg="手机号"/>
+                    <input type="text" id="email" name="email" class="text" tipMsg="<?php echo $lang['login_register_input_valid_email'];?>"/>
                   </dd>
                 </dl>
                 <?php if(C('captcha_status_register') == '1') { ?>
@@ -218,13 +218,14 @@ $(function(){
                 required : true,
                 equalTo  : '#password'
             },
-            member_mobile : {
+            email : {
                 required : true,
+                email    : true,
                 remote   : {
-                    url : 'index.php?act=login&op=member_mobile',
+                    url : 'index.php?act=login&op=check_email',
                     type: 'get',
                     data:{
-                        member_mobile : function(){
+                        email : function(){
                             return $('#email').val();
                         }
                     }
@@ -270,9 +271,10 @@ $(function(){
                 required : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_input_password_again'];?>',
                 equalTo  : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_password_not_same'];?>'
             },
-            member_mobile : {
-                required : '<i class="icon-exclamation-sign"></i>手机号必填',
-				remote	 : '<i class="icon-exclamation-sign"></i>请正确书写未注册的手机号码'
+            email : {
+                required : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_input_email'];?>',
+                email    : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_invalid_email'];?>',
+				remote	 : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_email_exists'];?>'
             },
 			<?php if(C('captcha_status_register') == '1') { ?>
             captcha : {

@@ -151,8 +151,8 @@
       </dt>
       <dd>
         <ul>
-          <li class="w50pre none"><a href="http://www.haoid.cn" target="_blank">官方网站<sub></sub></a></li>
-          <li class="w50pre none"><a href="http://www.haoid.cn" target="_blank">官方论坛<sub></sub></a></li>
+          <li class="w50pre none"><a href="http://www.33hao.com" target="_blank">官方网站<sub></sub></a></li>
+          <li class="w50pre none"><a href="http://bbs.33hao.com" target="_blank">官方论坛<sub></sub></a></li>
         </ul>
       </dd>
     </dl>

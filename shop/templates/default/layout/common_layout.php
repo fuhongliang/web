@@ -4,7 +4,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>">
 <title><?php echo $output['html_title'];?></title>
-    <meta name=referrer content=no-referrer>
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 <meta name="keywords" content="<?php echo $output['seo_keywords']; ?>" />
 <meta name="description" content="<?php echo $output['seo_description']; ?>" />

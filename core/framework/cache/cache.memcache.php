@@ -1,7 +1,7 @@
 <?php
 /**
  * memcache 操作
- * 好商城V3 www.haoid.cn 专业团队 提供售后服务务
+ * 好商城V3 www.33hao.com 专业团队 提供售后服务务
  */
 defined('InShopNC') or exit('Access Invalid!');
 

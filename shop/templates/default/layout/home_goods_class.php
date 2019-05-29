@@ -3,7 +3,6 @@
   <h3><a href="<?php echo urlShop('category', 'index');?>"><?php echo $lang['nc_all_goods_class'];?></a></h3>
 </div>
 <div class="category">
-
   <ul class="menu">
     <?php if (!empty($output['show_goods_class']) && is_array($output['show_goods_class'])) { $i = 0; ?>
     <?php foreach ($output['show_goods_class'] as $key => $val) { $i++; ?>

@@ -5,7 +5,7 @@
  * 
  *
  *
- * by 33hao 好商城V3  www.haoid.cn 开发
+ * by 33hao 好商城V3  www.33hao.com 开发
  */
 defined('InShopNC') or exit('Access Invalid!');
 class p_xianshi_goodsModel extends Model{
@@ -17,7 +17,7 @@ class p_xianshi_goodsModel extends Model{
         parent::__construct('p_xianshi_goods');
     }
 	 /**
-     * 限时表获取详细商品信息 haoid.cn v3-10
+     * 限时表获取详细商品信息 33hao.com v3-10
      *
      * @param array $condition
      * @param string $field
@@ -64,7 +64,7 @@ class p_xianshi_goodsModel extends Model{
         }
         return $xianshi_goods_list;
 	}
-	// haoid.cn v3-10 str
+	// 33hao.com v3-10 str
 	public function getXianshiGoodsExtendIds($condition, $page=null, $order='', $field='goods_id', $limit = 0) {
         $xianshi_goods_id_list = $this->getXianshiGoodsList($condition, $page, $order, $field, $limit);
       
@@ -78,7 +78,7 @@ class p_xianshi_goodsModel extends Model{
 		
         return $xianshi_goods_id_list;
 	}
-	// haoid.cn v3-10 end
+	// 33hao.com v3-10 end
 
     /**
 	 * 根据条件读取限制折扣商品信息

@@ -5,7 +5,7 @@
  * 商城板块初始化文件，引用框架初始化文件
  *
  *
- *by 33hao www.haoid.cn 开发修正
+ *by 33hao www.33hao.com 开发修正
  */
 define('APP_ID','microshop');
 define('BASE_PATH',str_replace('\\','/',dirname(__FILE__)));

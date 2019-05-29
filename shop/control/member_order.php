@@ -2,7 +2,7 @@
 /**
  * 买家 我的实物订单
  *
- * by www.haoid.cn 33hao 开发调试*/
+ * by www.33hao.com 33hao 开发调试*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -257,7 +257,7 @@ class member_orderControl extends BaseMemberControl {
         //显示系统自动取消订单日期
         if ($order_info['order_state'] == ORDER_STATE_NEW) {
             //$order_info['order_cancel_day'] = $order_info['add_time'] + ORDER_AUTO_CANCEL_DAY * 24 * 3600;
-			// by haoid.cn
+			// by 33hao.com
 			$order_info['order_cancel_day'] = $order_info['add_time'] + ORDER_AUTO_CANCEL_DAY + 3 * 24 * 3600;
         }
 
@@ -272,7 +272,7 @@ class member_orderControl extends BaseMemberControl {
         //显示系统自动收获时间
         if ($order_info['order_state'] == ORDER_STATE_SEND) {
            //$order_info['order_confirm_day'] = $order_info['delay_time'] + ORDER_AUTO_RECEIVE_DAY * 24 * 3600;
-			//by haoid.cn
+			//by 33hao.com
 			$order_info['order_confirm_day'] = $order_info['delay_time'] + ORDER_AUTO_RECEIVE_DAY + 15 * 24 * 3600;
         }
 

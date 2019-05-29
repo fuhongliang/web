@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao 好商城V3  www.haoid.cn 开发
+ * by 33hao 好商城V3  www.33hao.com 开发
  */
 defined('InShopNC') or exit('Access Invalid!');
 class orderModel extends Model {
@@ -442,9 +442,7 @@ class orderModel extends Model {
         if (!is_array($order_info) || empty($order_info)) return false;
 
         switch ($operate) {
-            case 'store_receive':
-                $state = $order_info['order_state'] == ORDER_STATE_PAY;
-                break;
+
             //买家取消订单
         	case 'buyer_cancel':
         	   $state = ($order_info['order_state'] == ORDER_STATE_NEW) ||
@@ -499,7 +497,7 @@ class orderModel extends Model {
 
         	//发货
         	case 'send':
-        	    $state = !$order_info['lock_state'] && $order_info['order_state'] == ORDER_STATE_NEEDPAY;
+        	    $state = !$order_info['lock_state'] && $order_info['order_state'] == ORDER_STATE_PAY;
         	    break;
 
         	//收货

@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.haoid.cn 运营版*/
+ **by 好商城V3 www.33hao.com 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -28,7 +28,7 @@ class goodsControl extends BaseGoodsControl {
         if (empty($goods_info)) {
             showMessage(L('goods_index_no_goods'), '', 'html', 'error');
         }
-		// by haoid.cn
+		// by 33hao.com
 		$rs = $model_goods->getGoodsList(array('goods_commonid'=>$goods_info['goods_commonid']));
 		$count = 0;
 		foreach($rs as $v){
