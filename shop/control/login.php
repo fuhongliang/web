@@ -203,7 +203,7 @@ class loginControl extends BaseHomeControl {
 //	            if ($_GET['inajax'] == 1){
 //	                showDialog('',$_POST['ref_url'] == '' ? 'reload' : $_POST['ref_url'],'js');
 //	            } else {
-	                redirect('/index.php');
+	                redirect('/shop/index.php');
 	           // }
 	        } else {
 	            showDialog($member_info['error']);
