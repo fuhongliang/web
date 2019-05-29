@@ -2,7 +2,7 @@
 /**
  * 实物订单行为 v3-b12
  *
- * 好商城 V3 33hao.com
+ * 好商城 V3 haoid.cn
  */
 defined('InShopNC') or exit('Access Invalid!');
 class orderLogic {

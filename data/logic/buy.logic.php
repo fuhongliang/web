@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao  www.33hao.com 开发
+ * by 33hao  www.haoid.cn 开发
  */
 defined('InShopNC') or exit('Access Invalid!');
 class buyLogic {

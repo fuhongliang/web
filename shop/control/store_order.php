@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.33hao.com 运营版*/
+ **by 好商城V3 www.haoid.cn 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -28,10 +28,10 @@ class store_orderControl extends BaseSellerControl {
         if ($_GET['buyer_name'] != '') {
             $condition['buyer_name'] = $_GET['buyer_name'];
         }
-        $allow_state_array = array('state_new','state_pay','state_send','state_success','state_cancel');
+        $allow_state_array = array('state_new','state_pay','state_needpay','state_send','state_success','state_cancel');
         if (in_array($_GET['state_type'],$allow_state_array)) {
             $condition['order_state'] = str_replace($allow_state_array,
-                    array(ORDER_STATE_NEW,ORDER_STATE_PAY,ORDER_STATE_SEND,ORDER_STATE_SUCCESS,ORDER_STATE_CANCEL), $_GET['state_type']);
+                    array(ORDER_STATE_NEW,ORDER_STATE_PAY,ORDER_STATE_NEEDPAY,ORDER_STATE_SEND,ORDER_STATE_SUCCESS,ORDER_STATE_CANCEL), $_GET['state_type']);
         } else {
             $_GET['state_type'] = 'store_order';
         }
@@ -48,9 +48,10 @@ class store_orderControl extends BaseSellerControl {
         }
 
         $order_list = $model_order->getOrderList($condition, 20, '*', 'order_id desc','', array('order_goods','order_common','member'));
-
         //页面中显示那些操作
+
         foreach ($order_list as $key => $order_info) {
+            $order_info['if_store_receive'] = $model_order->getOrderOperateState('store_receive',$order_info);
 
         	//显示取消订单
         	$order_info['if_cancel'] = $model_order->getOrderOperateState('store_cancel',$order_info);
@@ -69,7 +70,6 @@ class store_orderControl extends BaseSellerControl {
 
         	//显示物流跟踪
         	$order_info['if_deliver'] = $model_order->getOrderOperateState('deliver',$order_info);
-
         	foreach ($order_info['extend_order_goods'] as $value) {
         	    $value['image_60_url'] = cthumb($value['goods_image'], 60, $value['store_id']);
         	    $value['image_240_url'] = cthumb($value['goods_image'], 240, $value['store_id']);
@@ -148,7 +148,7 @@ class store_orderControl extends BaseSellerControl {
         //显示系统自动取消订单日期
         if ($order_info['order_state'] == ORDER_STATE_NEW) {
             //$order_info['order_cancel_day'] = $order_info['add_time'] + ORDER_AUTO_CANCEL_DAY * 24 * 3600;
-			// by 33hao.com
+			// by haoid.cn
 			$order_info['order_cancel_day'] = $order_info['add_time'] + ORDER_AUTO_CANCEL_DAY + 3 * 24 * 3600;
         }
 
@@ -163,7 +163,7 @@ class store_orderControl extends BaseSellerControl {
         //显示系统自动收获时间
         if ($order_info['order_state'] == ORDER_STATE_SEND) {
             //$order_info['order_confirm_day'] = $order_info['delay_time'] + ORDER_AUTO_RECEIVE_DAY * 24 * 3600;
-			//by 33hao.com
+			//by haoid.cn
 			$order_info['order_confirm_day'] = $order_info['delay_time'] + ORDER_AUTO_RECEIVE_DAY + 15 * 24 * 3600;
         }
 
@@ -309,7 +309,7 @@ class store_orderControl extends BaseSellerControl {
             $menu_array = array(
             array('menu_key'=>'store_order',		'menu_name'=>Language::get('nc_member_path_all_order'),	'menu_url'=>'index.php?act=store_order'),
             array('menu_key'=>'state_new',			'menu_name'=>Language::get('nc_member_path_wait_pay'),	'menu_url'=>'index.php?act=store_order&op=index&state_type=state_new'),
-            array('menu_key'=>'state_pay',	        'menu_name'=>Language::get('nc_member_path_wait_send'),	'menu_url'=>'index.php?act=store_order&op=store_order&state_type=state_pay'),
+            array('menu_key'=>'state_needpay',	        'menu_name'=>Language::get('nc_member_path_wait_send'),	'menu_url'=>'index.php?act=store_order&op=store_order&state_type=state_needpay'),
             array('menu_key'=>'state_send',		    'menu_name'=>Language::get('nc_member_path_sent'),	    'menu_url'=>'index.php?act=store_order&op=index&state_type=state_send'),
             array('menu_key'=>'state_success',		'menu_name'=>Language::get('nc_member_path_finished'),	'menu_url'=>'index.php?act=store_order&op=index&state_type=state_success'),
             array('menu_key'=>'state_cancel',		'menu_name'=>Language::get('nc_member_path_canceled'),	'menu_url'=>'index.php?act=store_order&op=index&state_type=state_cancel'),

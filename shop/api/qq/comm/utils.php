@@ -4,7 +4,7 @@
  *
  * @version 1.2
  * @author connect@qq.com
- * @copyright © 2011, Tencent Corporation. All rights reserved.
+ * @copyright (c) 2011, Tencent Corporation. All rights reserved.
  */
 
 /**
@@ -30,7 +30,7 @@ function get_url_contents($url)
 {
 //    if (ini_get("allow_url_fopen") == "1")
 //        return file_get_contents($url);
-// by 33hao.com
+// by haoid.cn
 		if (ini_get("allow_url_fopen") == "1")
            return file_get_contents($url);
 

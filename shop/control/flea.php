@@ -1,7 +1,7 @@
 <?php
 /**
  * 闲置市场默认展示页面
- * by 33hao.com
+ * by haoid.cn
  */
 defined('InShopNC') or exit('Access Invalid!');
 class fleaControl extends BaseFleaControl{

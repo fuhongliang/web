@@ -4,7 +4,7 @@
  *
  * 模型类
  *
- * @package    core* www.33hao.com 专业团队 提供售后服务
+ * @package    core* www.haoid.cn 专业团队 提供售后服务
  */
 class Model{
 

@@ -2,7 +2,7 @@
 /**
  * 货到付款地区设置 v3-b12
  *
- * by www.33hao.com */
+ * by www.haoid.cn */
 
 defined('InShopNC') or exit('Access Invalid!');
 

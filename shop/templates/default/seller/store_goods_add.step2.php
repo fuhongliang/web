@@ -640,7 +640,7 @@
       <h3 id="demo6"><?php echo $lang['store_goods_index_goods_other_info']?></h3>
       <dl>
         <dt><?php echo $lang['store_goods_index_store_goods_class'].$lang['nc_colon'];?></dt>
-        <dd><span class="new_add"><a href="javascript:void(0)" id="add_sgcategory" class="ncsc-btn"><?php echo $lang['store_goods_index_new_class'];?></a> </span>
+        <dd>
           <?php if (!empty($output['store_class_goods'])) { ?>
           <?php foreach ($output['store_class_goods'] as $v) { ?>
           <select name="sgcate_id[]" class="sgcategory">

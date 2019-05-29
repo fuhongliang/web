@@ -5,7 +5,7 @@
  * 
  *
  *
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 33hao 好商城V3  www.haoid.cn 开发
  */
 defined('InShopNC') or exit('Access Invalid!');
 
@@ -52,17 +52,20 @@ class monthControl extends BaseCronControl {
         $model_order = Model('order');
         $model_bill = Model('bill');
         $order_statis_max_info = $model_bill->getOrderStatisInfo(array(),'os_end_date','os_month desc');
+
         //计算起始时间点，自动生成以月份为单位的空结算记录
         if (!$order_statis_max_info){
-            $order_min_info = $model_order->getOrderInfo(array(),array(),'min(add_time) as add_time');
-            $start_unixtime = is_numeric($order_min_info['add_time']) ? $order_min_info['add_time'] : TIMESTAMP;
+            //$order_min_info = $model_order->getOrderInfo(array(),array(),'min(add_time) as add_time');
+            //$start_unixtime = is_numeric($order_min_info['add_time']) ? $order_min_info['add_time'] : TIMESTAMP;
+            $start_unixtime = strtotime(date('2019-02-01 00:00:00'));
         } else {
             $start_unixtime = $order_statis_max_info['os_end_date'];
+            $start_unixtime = strtotime(date('Y-m-01 00:00:00', $start_unixtime));
         }
         $data = array();
         $i = 1;
-        $start_unixtime = strtotime(date('Y-m-01 00:00:00', $start_unixtime));
         $current_time = strtotime(date('Y-m-01 00:00:01',TIMESTAMP));
+        //echo date('Y-m-d H:i:s',$start_unixtime).'----'.date('Y-m-d H:i:s',$current_time);die;
         while (($time = strtotime('-'.$i.' month',$current_time)) >= $start_unixtime) {
             if (date('Ym',$start_unixtime) == date('Ym',$time)) {
                 //如果两个月份相等检查库是里否存在
@@ -79,10 +82,8 @@ class monthControl extends BaseCronControl {
             $data[$key]['os_year'] = date('Y',$first_day_unixtime);
             $data[$key]['os_start_date'] = $first_day_unixtime;
             $data[$key]['os_end_date'] = $last_day_unixtime;
-
             //生成所有店铺月订单出账单
             $this->_create_real_order_bill($data[$key]);
-
             $fileds = 'sum(ob_order_totals) as ob_order_totals,sum(ob_shipping_totals) as ob_shipping_totals,
                     sum(ob_order_return_totals) as ob_order_return_totals,
                     sum(ob_commis_totals) as ob_commis_totals,sum(ob_commis_return_totals) as ob_commis_return_totals,
@@ -100,6 +101,7 @@ class monthControl extends BaseCronControl {
         krsort($data);
         foreach ($data as $v) {
             $insert = $model_bill->addOrderStatis($v);
+
             if (!$insert) {
                 throw new Exception('生成平台月出账单['.$v['os_month'].']失败');
             }
@@ -154,15 +156,15 @@ class monthControl extends BaseCronControl {
                         }
 
                         // 发送店铺消息
-                        $param = array();
-                        $param['code'] = 'store_bill_affirm';
-                        $param['store_id'] = $store_info['store_id'];
-                        $param['param'] = array(
-                            'state_time' => date('Y-m-d H:i:s', $data_bill['ob_start_date']),
-                            'end_time' => date('Y-m-d H:i:s', $data_bill['ob_end_date']),
-                            'bill_no' => $data_bill['ob_no']
-                        );
-                        QueueClient::push('sendStoreMsg', $param);
+//                        $param = array();
+//                        $param['code'] = 'store_bill_affirm';
+//                        $param['store_id'] = $store_info['store_id'];
+//                        $param['param'] = array(
+//                            'state_time' => date('Y-m-d H:i:s', $data_bill['ob_start_date']),
+//                            'end_time' => date('Y-m-d H:i:s', $data_bill['ob_end_date']),
+//                            'bill_no' => $data_bill['ob_no']
+//                        );
+//                        QueueClient::push('sendStoreMsg', $param);
                     }
                 }
             }
@@ -264,14 +266,15 @@ class monthControl extends BaseCronControl {
         $order_statis_max_info = $model_bill->getOrderStatisInfo(array(),'os_end_date','os_month desc');
         //计算起始时间点，自动生成以月份为单位的空结算记录
         if (!$order_statis_max_info){
-            $order_min_info = $model_order->getOrderInfo(array(),'min(add_time) as add_time');
-            $start_unixtime = is_numeric($order_min_info['add_time']) ? $order_min_info['add_time'] : TIMESTAMP;
+            //$order_min_info = $model_order->getOrderInfo(array(),'min(add_time) as add_time');
+            //$start_unixtime = is_numeric($order_min_info['add_time']) ? $order_min_info['add_time'] : TIMESTAMP;
+            $start_unixtime = strtotime(date('2019-02-01 00:00:00'));
         } else {
             $start_unixtime = $order_statis_max_info['os_end_date'];
+            $start_unixtime = strtotime(date('Y-m-01 00:00:00', $start_unixtime));
         }
         $data = array();
         $i = 1;
-        $start_unixtime = strtotime(date('Y-m-01 00:00:00', $start_unixtime));
         $current_time = strtotime(date('Y-m-01 00:00:01',TIMESTAMP));
         while (($time = strtotime('-'.$i.' month',$current_time)) >= $start_unixtime) {
             if (date('Ym',$start_unixtime) == date('Ym',$time)) {
@@ -352,16 +355,16 @@ class monthControl extends BaseCronControl {
                             throw new Exception('更新账单['.$data_bill['ob_no'].']失败');
                         }
 
-                        // 发送店铺消息
-                        $param = array();
-                        $param['code'] = 'store_bill_affirm';
-                        $param['store_id'] = $store_info['store_id'];
-                        $param['param'] = array(
-                                'state_time' => date('Y-m-d H:i:s', $data_bill['ob_start_date']),
-                                'end_time' => date('Y-m-d H:i:s', $data_bill['ob_end_date']),
-                                'bill_no' => $data_bill['ob_no']
-                        );
-                        QueueClient::push('sendStoreMsg', $param);
+//                        // 发送店铺消息
+//                        $param = array();
+//                        $param['code'] = 'store_bill_affirm';
+//                        $param['store_id'] = $store_info['store_id'];
+//                        $param['param'] = array(
+//                                'state_time' => date('Y-m-d H:i:s', $data_bill['ob_start_date']),
+//                                'end_time' => date('Y-m-d H:i:s', $data_bill['ob_end_date']),
+//                                'bill_no' => $data_bill['ob_no']
+//                        );
+//                        QueueClient::push('sendStoreMsg', $param);
                     }
                 }
             }

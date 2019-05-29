@@ -5,7 +5,7 @@
  * 
  *
  *
- *  by 33hao.com
+ *  by haoid.cn
  */
 defined('InShopNC') or exit('Access Invalid!');
 

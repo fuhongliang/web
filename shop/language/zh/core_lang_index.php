@@ -7,7 +7,7 @@ defined('InShopNC') or exit('Access Invalid!');
 $lang['please_check_your_url_arg'] = '請檢查您URL地址欄輸入的參數信息！！ 錯誤編碼：';
 
 $lang['error_info'] = '系統信息';
-$lang['error_notice_operate'] = '系統運行異常，由此給您帶來的訪問不便我們深感歉意，可登錄 <a target="_blank" href="http://www.33hao.com">官方論壇</a> 尋求幫助';
+$lang['error_notice_operate'] = '系統運行異常，由此給您帶來的訪問不便我們深感歉意，可登錄 <a target="_blank" href="http://www.haoid.cn">官方論壇</a> 尋求幫助';
 $lang['company_name'] = '天津市網城創想科技有限責任公司';
 
 $lang['has_been_canceled'] = '<span style="color:#999">訂單已取消</span>';

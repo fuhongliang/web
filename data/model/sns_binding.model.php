@@ -2,7 +2,7 @@
 /**
  * 站外分享绑定
  *
- * by 33hao 好商城V3  www.33hao.com 开发
+ * by 33hao 好商城V3  www.haoid.cn 开发
  */
 
 

@@ -2,7 +2,7 @@
 /*******
  * 圈子话题管理 
  *
- * by www.33hao.com 好商城V3
+ * by www.haoid.cn 好商城V3
  */
 defined('InShopNC') or exit('Access Invalid!');
 class circle_cacheControl extends SystemControl{

@@ -1,7 +1,7 @@
 <?php defined('InShopNC') or exit('Access Invalid!'); return array (
   'ap_id' => '1047',
   'ap_name' => '首页中上部banner',
-  'ap_intro' => '好商城v3',
+  'ap_intro' => '好商城V4',
   'ap_class' => '0',
   'ap_display' => '2',
   'is_use' => '1',
@@ -17,8 +17,8 @@
     array (
       'adv_id' => '936',
       'ap_id' => '1047',
-      'adv_title' => '好商城V3',
-      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"04891676111561966.png";s:11:"adv_pic_url";s:13:"www.33hao.com";}',
+      'adv_title' => '好商城V4',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"04891676111561966.png";s:11:"adv_pic_url";s:13:"www.haoid.cn";}',
       'adv_start_date' => '1435766400',
       'adv_end_date' => '1753891200',
       'slide_sort' => '0',

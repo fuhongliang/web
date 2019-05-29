@@ -4,7 +4,7 @@
  *
  *
  *
- * @package    function* www.33hao.com 专业团队 提供售后服务
+ * @package    function* www.haoid.cn 专业团队 提供售后服务
  */
 
 defined('InShopNC') or exit('Access Invalid!');

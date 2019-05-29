@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.33hao.com 运营版*/
+ **by 好商城V3 www.haoid.cn 运营版*/
 
 
 defined('InShopNC') or exit ('Access Invalid!');
@@ -578,6 +578,7 @@ class store_goods_onlineControl extends BaseSellerControl {
                 $insert['goods_vat']         = $update_common['goods_vat'];
                 $insert['goods_commend']     = $update_common['goods_commend'];
                 $insert['goods_stcids']      = $update_common['goods_stcids'];
+                $insert['goods_stcid']      = $update_common['goods_stcids'];
                 $insert['is_virtual']        = $update_common['is_virtual'];
                 $insert['virtual_indate']    = $update_common['virtual_indate'];
                 $insert['virtual_limit']     = $update_common['virtual_limit'];

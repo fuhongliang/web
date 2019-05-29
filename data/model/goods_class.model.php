@@ -5,7 +5,7 @@
  *
  *
  *
- * by 33hao 网店技术交流中心  www.33hao.com 开发
+ * by 33hao 网店技术交流中心  www.haoid.cn 开发
  */
 
 defined('InShopNC') or exit('Access Invalid!');

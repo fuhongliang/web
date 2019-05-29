@@ -3,7 +3,7 @@
  * 友情连接展示页面 v3-b12
  *
  *
- * 好商城V3 33hao.com
+ * 好商城V3 haoid.cn
  *
  */
 defined('InShopNC') or exit('Access Invalid!');

@@ -102,7 +102,7 @@ $(function(){
     $('#auth_form').validate({
         rules : {
         	auth_code : {
-                required : true,
+                required : false,
                 maxlength : 6,
                 minlength : 6,
                 digits : true

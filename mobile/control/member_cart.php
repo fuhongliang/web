@@ -3,7 +3,7 @@
  * 我的购物车  v3-b12
  *
  * @好商城V4 (c) 2005-2016 33hao Inc.
- * @license    http://www.33hao.com
+ * @license    http://www.haoid.cn
  * @link       交流群号：216611541
  * @since      好商城提供技术支持 授权请购买shopnc授权
 

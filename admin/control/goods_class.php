@@ -4,9 +4,10 @@
  *
  *
  *
- **by 好商城V3 www.33hao.com 运营版*/
+ **by 好商城V3 www.haoid.cn 运营版*/
 
 defined('InShopNC') or exit('Access Invalid!');
+
 class goods_classControl extends SystemControl{
 	private $links = array(
 		array('url'=>'act=goods_class&op=goods_class','lang'=>'nc_manage'),
@@ -104,10 +105,12 @@ class goods_classControl extends SystemControl{
 				if ($result){
     				if ($insert_array['gc_parent_id'] == 0) {
             			if (!empty($_FILES['pic']['name'])) {//上传图片
+                            $ext = pathinfo($_FILES["pic"]['name']);
             				$upload = new UploadFile();
                 			$upload->set('default_dir',ATTACH_COMMON);
-                			$upload->set('file_name','category-pic-'.$result.'.jpg');
+                			$upload->set('file_name','category-pic-'.$result.'.'.$ext['extension']);
             				$upload->upfile('pic');
+                            $model_class->editGoodsClass(['icon_image'=>'category-pic-'.$result.'.'.$ext['extension']],['gc_id'=>$result]);
             			}
     				}
 					$url = array(

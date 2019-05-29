@@ -5,7 +5,7 @@
  * 统一入口，进行初始化信息
  *
  *
- *by 好商城V3 www.33hao.com 运营版 
+ *by 好商城V3 www.haoid.cn 运营版 
  */
 
 error_reporting(E_ALL & ~E_NOTICE);
@@ -21,6 +21,11 @@ if (!is_file(BASE_ROOT_PATH."/install/lock") && is_file(BASE_ROOT_PATH."/install
     }
     exit;
 }
+
+define('HOST_URL','http://47.111.27.189:2345');
+
+
+
 define('BASE_CORE_PATH',BASE_ROOT_PATH.'/core');
 define('BASE_DATA_PATH',BASE_ROOT_PATH.'/data');
 define('DS','/');
@@ -110,12 +115,15 @@ define('GOODS_IMAGES_EXT', '_60,_240,_360,_1280');
 /**
  *  订单状态
  */
+
 //已取消
 define('ORDER_STATE_CANCEL', 0);
 //已产生但未支付
 define('ORDER_STATE_NEW', 10);
-//已支付
+//已支付  待接单
 define('ORDER_STATE_PAY', 20);
+//代发货
+define('ORDER_STATE_NEEDPAY', 25);
 //已发货
 define('ORDER_STATE_SEND', 30);
 //已收货，交易成功

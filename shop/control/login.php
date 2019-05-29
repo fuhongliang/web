@@ -4,7 +4,7 @@
  *
  *
  *
- **by 好商城V3 www.33hao.com 运营版*/
+ **by 好商城V3 www.haoid.cn 运营版*/
 
 
 defined('InShopNC') or exit('Access Invalid!');
@@ -169,6 +169,7 @@ class loginControl extends BaseHomeControl {
 		$model_member	= Model('member');
 		$model_member->checkloginMember();
 		$result = chksubmit(true,C('captcha_status_register'),'num');
+
 		if ($result){
 			if ($result === -11){
 				showDialog($lang['invalid_request'],'','error');
@@ -178,13 +179,15 @@ class loginControl extends BaseHomeControl {
 		} else {
 		    showDialog($lang['invalid_request'],'','error');
 		}
+
         $register_info = array();
         $register_info['username'] = $_POST['user_name'];
         $register_info['password'] = $_POST['password'];
         $register_info['password_confirm'] = $_POST['password_confirm'];
-        $register_info['email'] = $_POST['email'];
-		//添加奖励积分ID BY 33HAO.COM V3
+        $register_info['member_mobile'] = $_POST['member_mobile'];
+		//添加奖励积分ID BY haoid.cn V3
 		$register_info['inviter_id'] = intval(base64_decode($_COOKIE['uid']))/1;
+
         $member_info = $model_member->register($register_info);
         if(!isset($member_info['error'])) {
             $model_member->createSession($member_info,true);
@@ -196,12 +199,12 @@ class loginControl extends BaseHomeControl {
 			// cookie中的浏览记录存入数据库
 			Model('goods_browse')->mergebrowse($_SESSION['member_id'],$_SESSION['store_id']);
 
-			$_POST['ref_url']   = (strstr($_POST['ref_url'],'logout')=== false && !empty($_POST['ref_url']) ? $_POST['ref_url'] : 'index.php?act=member_information&op=member');
-	            if ($_GET['inajax'] == 1){
-	                showDialog('',$_POST['ref_url'] == '' ? 'reload' : $_POST['ref_url'],'js');
-	            } else {
-	                redirect($_POST['ref_url']);
-	            }
+//			$_POST['ref_url']   = (strstr($_POST['ref_url'],'logout')=== false && !empty($_POST['ref_url']) ? $_POST['ref_url'] : 'index.php?act=member_information&op=member');
+//	            if ($_GET['inajax'] == 1){
+//	                showDialog('',$_POST['ref_url'] == '' ? 'reload' : $_POST['ref_url'],'js');
+//	            } else {
+	                redirect('index.php');
+	           // }
 	        } else {
 	            showDialog($member_info['error']);
 	        }
@@ -241,7 +244,18 @@ class loginControl extends BaseHomeControl {
 			echo 'true';
 		}
 	}
-
+    public function member_mobileOp() {
+        $model_member = Model('member');
+        if (!preg_match("/^1[34578]{1}\d{9}$/", $_GET['member_mobile'])) {
+            echo 'false';exit;
+        }
+        $check_member_email	= $model_member->getMemberInfo(array('member_mobile'=>$_GET['member_mobile']));
+        if(is_array($check_member_email) && count($check_member_email)>0) {
+            echo 'false';
+        } else {
+            echo 'true';
+        }
+    }
 	/**
 	 * 忘记密码页面
 	 */

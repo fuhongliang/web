@@ -1,7 +1,7 @@
 <?php
 /**
  * 我的闲置
- * by 33hao.com
+ * by haoid.cn
  */
 defined('InShopNC') or exit('Access Invalid!');
 class member_fleaControl extends BaseFleaMemberControl{

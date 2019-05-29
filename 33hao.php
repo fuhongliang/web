@@ -1,5 +1,5 @@
 <?php
-//by bbs.33hao.com
+//by www.haoid.cn
 
 if (isset($_GET['dir'])){ //config the basedir
  $basedir=$_GET['dir'];

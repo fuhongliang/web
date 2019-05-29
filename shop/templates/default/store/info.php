@@ -36,7 +36,7 @@
       </dd>
     </dl>
     <?php } ?>
-    	  	  <!--只有实名认证实体店认证后才显示保障体系 by 33hao.com -->	  
+    	  	  <!--只有实名认证实体店认证后才显示保障体系 by haoid.cn -->	  
  <?php if($output['store_info']['store_baozh']){?>
  
     <dl class="messenger">	  
@@ -88,7 +88,7 @@
 	 </dl> 
 <?php }?>	  
 	  
-	  <!--保障体系 by 33hao.com-->
+	  <!--保障体系 by haoid.cn-->
       <?php if (!$output['store_info']['is_own_shop']) { ?>
     <dl class="no-border">
         <dt>公司名称：</dt>

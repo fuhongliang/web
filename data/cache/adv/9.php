@@ -18,7 +18,7 @@
       'adv_id' => '15',
       'ap_id' => '9',
       'adv_title' => '首页通栏',
-      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"04716538681718544.png";s:11:"adv_pic_url";s:13:"www.33hao.com";}',
+      'adv_content' => 'a:2:{s:7:"adv_pic";s:21:"04716538681718544.png";s:11:"adv_pic_url";s:13:"www.haoid.cn";}',
       'adv_start_date' => '1388505600',
       'adv_end_date' => '1577721600',
       'slide_sort' => '0',

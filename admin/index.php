@@ -3,7 +3,7 @@
  * 商城板块初始化文件
  *
  *
- * * by 33hao www.33hao.com 运营版 */
+ * * by 33hao www.haoid.cn 运营版 */
 
 define('BASE_PATH',str_replace('\\','/',dirname(__FILE__)));
 if (!@include(dirname(dirname(__FILE__)).'/global.php')) exit('global.php isn\'t exists!');

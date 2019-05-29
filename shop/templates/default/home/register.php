@@ -33,9 +33,9 @@
                   </dd>
                 </dl>
                 <dl class="mt15">
-                  <dt><?php echo $lang['login_register_email'];?>：</dt>
+                  <dt>手机号：</dt>
                   <dd>
-                    <input type="text" id="email" name="email" class="text" tipMsg="<?php echo $lang['login_register_input_valid_email'];?>"/>
+                    <input type="text" id="email" name="member_mobile" class="text" tipMsg="手机号"/>
                   </dd>
                 </dl>
                 <?php if(C('captcha_status_register') == '1') { ?>
@@ -218,14 +218,13 @@ $(function(){
                 required : true,
                 equalTo  : '#password'
             },
-            email : {
+            member_mobile : {
                 required : true,
-                email    : true,
                 remote   : {
-                    url : 'index.php?act=login&op=check_email',
+                    url : 'index.php?act=login&op=member_mobile',
                     type: 'get',
                     data:{
-                        email : function(){
+                        member_mobile : function(){
                             return $('#email').val();
                         }
                     }
@@ -271,10 +270,9 @@ $(function(){
                 required : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_input_password_again'];?>',
                 equalTo  : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_password_not_same'];?>'
             },
-            email : {
-                required : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_input_email'];?>',
-                email    : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_invalid_email'];?>',
-				remote	 : '<i class="icon-exclamation-sign"></i><?php echo $lang['login_register_email_exists'];?>'
+            member_mobile : {
+                required : '<i class="icon-exclamation-sign"></i>手机号必填',
+				remote	 : '<i class="icon-exclamation-sign"></i>请正确书写未注册的手机号码'
             },
 			<?php if(C('captcha_status_register') == '1') { ?>
             captcha : {

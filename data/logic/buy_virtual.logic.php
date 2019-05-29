@@ -2,7 +2,7 @@
 /**
  * 虚拟商品购买行为 v3-b12
  *
- * by 33hao.com 好商城V3 运营版
+ * by haoid.cn 好商城V3 运营版
  */
 defined('InShopNC') or exit('Access Invalid!');
 class buy_virtualLogic {

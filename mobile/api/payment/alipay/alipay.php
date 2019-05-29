@@ -1,7 +1,7 @@
 <?php 
 /**
  * 支付接口
- * 好商城V3-B10 33hao.com
+ * 好商城V3-B10 haoid.cn
  *
  */
 defined('InShopNC') or exit('Access Invalid!');

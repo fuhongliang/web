@@ -2,7 +2,7 @@
 /**
  * 物流自提服务站模型
  *
- * by 33hao.com 好商城V3 运营版
+ * by haoid.cn 好商城V3 运营版
  */
 defined('InShopNC') or exit('Access Invalid!');
 class delivery_pointModel extends Model {

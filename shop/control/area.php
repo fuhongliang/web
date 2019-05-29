@@ -3,7 +3,7 @@
  * 地区 v3-b12 
  *
  *
- * 好商城V3 33hao.com
+ * 好商城V3 haoid.cn
  *
  */
 defined('InShopNC') or exit('Access Invalid!');
