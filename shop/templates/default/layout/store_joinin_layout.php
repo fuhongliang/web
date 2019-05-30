@@ -2,6 +2,7 @@
 <!doctype html>
 <html>
 <head>
+    <meta name=referrer content=no-referrer>
 <title><?php echo $output['html_title'];?></title>
 <meta charset="utf-8">
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
