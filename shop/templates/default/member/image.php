@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <meta name=referrer content=no-referrer>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>">
 <link href="<?php echo SHOP_TEMPLATES_URL;?>/css/member.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="<?php echo RESOURCE_SITE_URL;?>/js/jquery.js"></script>
