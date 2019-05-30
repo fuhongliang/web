@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8" />
 <title>商家管理中心登录</title>
+    <meta name=referrer content=no-referrer>
 <script type="text/javascript" src="<?php echo RESOURCE_SITE_URL;?>/js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo RESOURCE_SITE_URL;?>/js/jquery.validation.min.js"></script>
 <link href="<?php echo SHOP_TEMPLATES_URL?>/css/base.css" rel="stylesheet" type="text/css">
