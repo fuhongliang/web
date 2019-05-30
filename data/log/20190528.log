@@ -1,0 +1,51 @@
+[2019-05-28 12:05:32] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 13:48:59] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:10:18] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:13:08] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:13:40] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:13:50] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:14:55] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:15:34] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:15:41] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:15:53] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:18:52] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:19:26] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:19:54] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:21:23] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:21:47] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:23:21] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
+[2019-05-28 14:23:59] /huigoumall/ ( act=index&op=index ) 
+ERR: Db Error: Table 'huigoumall.hg_link' doesn't exist
+SELECT * FROM `hg_link` as `link`   order by link_id
