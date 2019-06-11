@@ -1,29 +1,13 @@
 <?php
-/**
- * 入口文件 v3-b12
- *
- * 统一入口，进行初始化信息
- *
- *
- *by 好商城V3 www.haoid.cn 运营版 
- */
-
 error_reporting(E_ALL & ~E_NOTICE);
 define('BASE_ROOT_PATH',str_replace('\\','/',dirname(__FILE__)));
-/**
- * 安装判断
- */
-if (!is_file(BASE_ROOT_PATH."/install/lock") && is_file(BASE_ROOT_PATH."/install/index.php")){
-    if (ProjectName != 'shop'){
-        @header("location: ../install/index.php");
-    }else{
-        @header("location: install/index.php");
-    }
-    exit;
+
+$server_name = $_SERVER['SERVER_NAME'];
+if (strpos('web.ifhu.cn',$server_name)) {
+    define('HOST_URL','http://web.ifhu.cn');
+} else {
+    define('HOST_URL','http://47.111.27.189:2345');
 }
-
-define('HOST_URL','http://47.111.27.189:2345');
-
 
 
 define('BASE_CORE_PATH',BASE_ROOT_PATH.'/core');
@@ -78,7 +62,6 @@ define('TPL_SHOP_NAME','default');
 define('TPL_CIRCLE_NAME', 'default');
 define('TPL_MICROSHOP_NAME', 'default');
 define('TPL_CMS_NAME', 'default');
-define('TPL_ADMIN_NAME', 'default');
 define('TPL_ADMIN_NAME', 'default');
 define('TPL_DELIVERY_NAME', 'default');
 define('TPL_MEMBER_NAME', 'default');
