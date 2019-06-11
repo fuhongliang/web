@@ -1,6 +1,8 @@
 <?php
 $server_name = $_SERVER['SERVER_NAME'];
-if (strpos($server_name,'web.ifhu.cn')) {
+if (strpos($server_name,'test')) {
+    define('HOST_URL','http://testweb.ifhu.cn');
+}elseif (strpos($server_name,'web.ifhu.cn')) {
     define('HOST_URL','http://web.ifhu.cn');
 } else {
     define('HOST_URL','http://47.111.27.189:2345');
