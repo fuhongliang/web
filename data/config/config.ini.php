@@ -1,6 +1,10 @@
 <?php
-
-
+$server_name = $_SERVER['SERVER_NAME'];
+if (strpos($server_name,'web.ifhu.cn')) {
+    define('HOST_URL','http://web.ifhu.cn');
+} else {
+    define('HOST_URL','http://47.111.27.189:2345');
+}
 $config = array();
 $config['base_site_url'] 		= HOST_URL;
 $config['shop_site_url'] 		= HOST_URL.'/shop';

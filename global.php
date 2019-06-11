@@ -1,15 +1,6 @@
 <?php
 error_reporting(E_ALL & ~E_NOTICE);
 define('BASE_ROOT_PATH',str_replace('\\','/',dirname(__FILE__)));
-
-$server_name = $_SERVER['SERVER_NAME'];
-if (strpos('web.ifhu.cn',$server_name)) {
-    define('HOST_URL','http://web.ifhu.cn');
-} else {
-    define('HOST_URL','http://47.111.27.189:2345');
-}
-
-
 define('BASE_CORE_PATH',BASE_ROOT_PATH.'/core');
 define('BASE_DATA_PATH',BASE_ROOT_PATH.'/data');
 define('DS','/');
