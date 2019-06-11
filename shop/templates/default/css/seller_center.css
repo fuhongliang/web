@@ -186,11 +186,11 @@ label.error i { margin-right: 4px;}
 ------------------------------------------- */
 .ncsc-login-bg, .ncsc-login-bg p { width: 100%; height: 100%; min-height:100%; padding: 0; margin: 0; border: 0; position: relative; z-index: auto;}
 .ncsc-login-bg { display: none; }
-#loginBG01 { background: url("http://47.111.27.189:2345/shop/templates/default/images/seller/login/login_bg_01_pic.png") repeat 0 0; }
-#loginBG02 { background: url("http://47.111.27.189:2345/shop/templates/default/images/seller/login/login_bg_02.png") repeat 0 0; }
-#loginBG01 p { background: url("http://47.111.27.189:2345/shop/templates/default/images/seller/login/login_bg_01_pic.png") no-repeat center center;}
+#loginBG01 { background: url("../images/seller/login/login_bg_01_pic.png") repeat 0 0; }
+#loginBG02 { background: url("../images/seller/login/login_bg_02.png") repeat 0 0; }
+#loginBG01 p { background: url("../images/seller/login/login_bg_01_pic.png") no-repeat center center;}
 #loginBG02 p { background: url(../images/seller/login/login_bg_02_pic.png) no-repeat center center;}
-.ncsc-login-container { font-family: "microsoft yahei"; background: url("http://47.111.27.189:2345/shop/templates/default/images/seller/login/login.png") no-repeat 0 0; width: 320px; height: 340px; padding: 10px 40px; margin: -180px 0 0 -200px;position: absolute; z-index: 9; top: 50%; left: 50%;}
+.ncsc-login-container { font-family: "microsoft yahei"; background: url("../images/seller/login/login.png") no-repeat 0 0; width: 320px; height: 340px; padding: 10px 40px; margin: -180px 0 0 -200px;position: absolute; z-index: 9; top: 50%; left: 50%;}
 .ncsc-login-title { overflow: hidden; }
 .ncsc-login-title span { line-height: 16px; color: #999;}
 .ncsc-login-container .input { display: block; width: 320px; height: 72px; clear: both; position: relative; z-index: auto;}
@@ -1076,7 +1076,7 @@ form input.error { border:red 1px dotted; }
 .ncsc-order-step .code-list #codeList { max-height: 135px; position: relative; z-index: auto; overflow: hidden;}
 .ncsc-order-step .code-list ul { }
 .ncsc-order-step .code-list li { color: #999; background-color: #FCFCFC; padding: 4px; margin-top: 5px;}
-.ncsc-order-step .code-list li:hover { background-color: #FFF; box-shadow: 0 0 5px rgba(204,204,204,0.75);} 
+.ncsc-order-step .code-list li:hover { background-color: #FFF; box-shadow: 0 0 5px rgba(204,204,204,0.75);}
 .ncsc-order-step .code-list li strong { font-family: Tahoma; font-size: 14px; font-weight: 600; color: #090; margin: 0 20px 0 5px;}
 .ncsc-order-step .code-list li.used { color: #F90; background-color: transparent; box-shadow: none;}
 .ncsc-order-step .code-list li.used strong { color: #999;}
@@ -1157,8 +1157,8 @@ form input.error { border:red 1px dotted; }
     -moz-border-top-colors: none;
    margin-left: 76px; width: auto;
     }
-	
-	
+
+
 .ncsc-keyboard .enter { font: lighter 20px/48px "microsoft yahei", Arial;
     background-color: #5bb75b;
     border: 0 none;
@@ -1890,7 +1890,7 @@ a:hover.ks-ext-close { text-decoration: none; color: #27A9E3;}
 #tbox .btn i { background: url(../images/seller/ncsc_bg_img.png) no-repeat; display: block; width: 24px; height: 24px; padding: 0; margin: 0 auto; position: relative; z-index: 1;}
 #tbox .btn i em { font: 10px/12px Arial; color: #FFF; background-color: #27A9E3; height: 12px; padding: 0 2px; border-radius: 6px; position: absolute; z-index: 1; top: -6px; right: -6px;}
 #tbox .btn i.im { background-position: -260px -420px;}
-#tbox .btn i.top { background-position: -260px -450px;} 
+#tbox .btn i.top { background-position: -260px -450px;}
 #tbox .btn i.msg { background-position: -260px -480px;}
 #tbox .btn a { font: 11px/20px "microsoft yahei"; color: #27A9E3; text-decoration: none; display: block;}
 #tbox .btn:hover { background-color: #27A9E3; box-shadow: 3px 3px 0 rgba(0,0,0,0.1); cursor: pointer;}
